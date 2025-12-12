@@ -28,7 +28,7 @@ Because of this I had to completely rewrite the majority of the code in my add-o
 This pivoted the direction of datacentral as until this point it was kind of a requirement that everything had to integrate with the Google drive API so I could work with my notes which made my code logic a lot more complicated. Additionally, I still had a lot of messy code from the past that was barely functional but too messy to rewrite easily. Because of this, when I rewrote the code for the add ons it was magnitudes of times faster. I also integrated the solid project which I had discovered in this time period as I realised the purpose of the solid project was incredibly similiar to a large aspect of datacentral.
 
 What to expect from datacentral in the future
-#############################################
+=============================================
 I dont plan to make datacentral open source as I feel that would compromise the security of the system as any given malicious actor could work backwards from the source code to exploit vulnerabilities. Instead I will release a set of files that detail the endpoints of each add on and what type of data that endpoint receives. This will enable users to create their own add ons and as long as they have the same endpoints they can replace the default add ons and the whole program will still be completely functional. 
 
 In terms of the immediate future of datacentral I plan to actually upload the files for datacentral in the next few days. After this I will work on making datacentral look more professional and streamline some of the code to better integrate the add ons with each other.  
