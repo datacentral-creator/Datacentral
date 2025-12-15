@@ -44,9 +44,9 @@ This pivoted the direction of datacentral as until this point it was kind of a r
 <details>
  <summary>
   <h1>The future of datacentral</h1>
-  I dont plan to make datacentral open source as I feel that would compromise the security of the system as any given malicious actor could work backwards from the source code to exploit vulnerabilities. Instead I will release a set of files that detail the endpoints of each add on and what type of data that endpoint receives. This will enable users to create their own add ons and as long as they have the same endpoints they can replace the default add ons and the whole program will still be completely functional. 
+ </summary>
+   I dont plan to make datacentral open source as I feel that would compromise the security of the system as any given malicious actor could work backwards from the source code to exploit vulnerabilities. Instead I will release a set of files that detail the endpoints of each add on and what type of data that endpoint receives. This will enable users to create their own add ons and as long as they have the same endpoints they can replace the default add ons and the whole program will still be completely functional. 
 
 
 In terms of the immediate future of datacentral I plan to actually upload the files for datacentral in the next few days. After this I will work on making datacentral look more professional and streamline some of the code to better integrate the add ons with each other.  
- </summary>
 </details>
