@@ -4,10 +4,10 @@
   <summary><h2>How to open datacentral</h2></summary>
   <ol>
     <li>Clone this repo/download the files </li>
-    <li>Download the add ons from <a href="https://drive.google.com/drive/folders/1CVWZeJZiCjq32vg5fwXDC4CNOiRVAqIK?usp=sharing">here</a> into the same directory as these files</li>
+    <li>Download the add ons from <a href="https://drive.google.com/drive/folders/1CVWZeJZiCjq32vg5fwXDC4CNOiRVAqIK?usp=sharing">here</a> (the .tar files) into the same directory as these files</li>
+    <li>Download the file "datacentral-1.0.0 Setup.exe" into the same directory as the other files</li>
     <li>Run "Server.exe"</li>
-    <li>To activate the program search the url "localhost:5000/Activate"</li>
-    <li>Currently the only addon that works can be found at "localhost:3002" after activating as described above</li>
+    <li>Run the "datacentral-1.0.0 Setup.exe" file by clicking on it twice to open the GUI interface</li>
   </ol> 
  </details>
 </details>
