@@ -1,0 +1,5 @@
+{
+  "file_read": "add_file",
+  "file_set": "download_file",
+  "file_edit": "text_editor"
+}
