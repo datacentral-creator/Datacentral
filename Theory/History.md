@@ -1,3 +1,5 @@
+[Research](index.md) | [Datacentral](https://github.com/datacentral-creator/Datacentral) | [History](https://github.com/datacentral-creator/Datacentral/blob/main/Theory/History.md)
+
 # A Brief History of Datacentral
 
 I began working on Datacentral approximately five years ago. Before this project existed, I relied heavily on Google Docs for note‑taking. I accumulated a vast number of notes over the years, but they were scattered across countless documents with no unifying structure. Two major frustrations emerged from this system.
