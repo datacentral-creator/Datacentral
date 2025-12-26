@@ -1,14 +1,4 @@
-<details>
- <summary>
-  <h1>Brief history/Context of datacentral</h1>
- </summary>
- <details>
-  <summary><h2>What is datacentral?</h2></summary>
-  As the name suggests the core idea of datacentral is supposed to be the "central" for your data acting as a self-enclosed ecosystem that allows you to fully transform your data from a passive resource into projects for example similiar to how wood is transformed into a table - as a tree wood isnt particularly useful for humans however when transformed into a specific object such as a table a tree becomes a thing by the purpose and form we give it.
- </details>
- <details>
-  <summary><h2>A brief history of datacentral</h2></summary>
-  I started working on datacentral about 5 years ago. Before datacentral I used to take notes on Google docs and I used to take a lot of notes that weren't necessarily united under specific categories. Over time I ended up with years of completely unorganised notes and I had a couple of frustrations with this system.
+I started working on datacentral about 5 years ago. Before datacentral I used to take notes on Google docs and I used to take a lot of notes that weren't necessarily united under specific categories. Over time I ended up with years of completely unorganised notes and I had a couple of frustrations with this system.
 Firstly, Google documents and Google slides had limitations in the ways I could record things-for instance it was very difficult to record complex formulae which I worked with often in my notes. 
 Secondly, I had an endlessly growing collection of data however when it actually came time to retrieve knowledge from that data I found I couldn't because what I wanted to know was distributed amongst countless documents I couldnt manually search and even the search faculties in place could only retrieve a small subset of the data I recorded.
 The latter frustration especially eventually prompted me to create my own program to replace this system. This caused me to create a program I called "the everything project" which was kind of like a second brain but for your whole life instead of just your brain.
@@ -26,4 +16,3 @@ Because of this I had to completely rewrite the majority of the code in my add-o
 
 This pivoted the direction of datacentral as until this point it was kind of a requirement that everything had to integrate with the Google drive API so I could work with my notes which made my code logic a lot more complicated. Additionally, I still had a lot of messy code from the past that was barely functional but too messy to rewrite easily. Because of this, when I rewrote the code for the add ons it was magnitudes of times faster. I also integrated the solid project which I had discovered in this time period as I realised the purpose of the solid project was incredibly similiar to a large aspect of datacentral.
 
- </details>
