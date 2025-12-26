@@ -1,18 +1,48 @@
-I started working on datacentral about 5 years ago. Before datacentral I used to take notes on Google docs and I used to take a lot of notes that weren't necessarily united under specific categories. Over time I ended up with years of completely unorganised notes and I had a couple of frustrations with this system.
-Firstly, Google documents and Google slides had limitations in the ways I could record things-for instance it was very difficult to record complex formulae which I worked with often in my notes. 
-Secondly, I had an endlessly growing collection of data however when it actually came time to retrieve knowledge from that data I found I couldn't because what I wanted to know was distributed amongst countless documents I couldnt manually search and even the search faculties in place could only retrieve a small subset of the data I recorded.
-The latter frustration especially eventually prompted me to create my own program to replace this system. This caused me to create a program I called "the everything project" which was kind of like a second brain but for your whole life instead of just your brain.
+# A Brief History of Datacentral
 
-I originally implemented it as a kivy program and as a solution to my second frustration I came up with an idea of a "tagger" which basically associates "tags" with your data. These "tags" would in theory become the building blocks of the form your data represents.The problem was I soon realised that only HTML would give me the customisability I needed to create these tags so I created a program to convert the kivy objects into a JSON representation which I would then convert into HTML and render in electron. It worked but the communication between kivy, the converter and electron was all managed by an event bus architecture and one day I had an error and I realised it would be easier to just start from scratch because of how convuluted my code base had become.
- 
-So I decided to recreate my program from scratch as a website in react as I had prior experience with react. Learning from my mistakes I tried to separate the functions of my program into independent Web pages and I created this "text editor" web page which would be the basis of this "tagger" component. 
-The website got rebuilt one last time using nextjs instead of react and by this point privacy had become a core ideal datacentral had become based around and datacentral had become an emenation of a shifting philosophy and a construction of a vision of a new kind of Internet similiarly built around individual privacy similiar to the idea of "Web3". As a part of this change these web pages I built became individual websites that exist independently of each other that I called "add ons".
+I began working on Datacentral approximately five years ago. Before this project existed, I relied heavily on Google Docs for note‑taking. I accumulated a vast number of notes over the years, but they were scattered across countless documents with no unifying structure. Two major frustrations emerged from this system.
 
-Additionally at this point I decided it would be better to create an infrastructure which would let each user self host the project themselves and connect using some kind of network (I eventually decided to use yggdrasil). The solution I settled on after about a year involved packaging the add-ons into images and creating a program which would setup the tools needed on the users computer and run the image - it also has the tools to run the image on a kubernete between multiple computers as this was the original plan but this remains latent for now.
+First, Google Docs and Google Slides imposed limitations on how I could record information. In particular, they made it difficult to write complex formulae, which I frequently needed to include in my notes.  
+Second, although I had amassed a large collection of data, retrieving knowledge from it proved nearly impossible. The information I needed was distributed across too many documents to search manually, and the built‑in search tools could only surface a small fraction of what I had recorded.
 
-After this I decided to self host a database as well as I had kind of learnt how code should be designed beyond just writing code which was a skill I fundamentally lacked before and I can attribute this to dev.to as well as a compounding amount of experience. 
+These frustrations eventually pushed me to create my own solution. The earliest version of this idea was something I called *the everything project* — a kind of “second brain,” but one intended to encompass an entire life rather than just cognitive tasks.
 
-Because of this I had to completely rewrite the majority of the code in my add-ons which took again about a year, then I finally got the whole system to work and my computer had an advanced error in the bios. Just prior to this my Google accounts had been hacked and due to this all of my data existed solely on my computer and due to this error all of that data was lost including not just datacentral but all of the the notes which induced its inception - I only managed to recover a singular file which was the file responsible for creating the kubernetes architecture. 
+---
 
-This pivoted the direction of datacentral as until this point it was kind of a requirement that everything had to integrate with the Google drive API so I could work with my notes which made my code logic a lot more complicated. Additionally, I still had a lot of messy code from the past that was barely functional but too messy to rewrite easily. Because of this, when I rewrote the code for the add ons it was magnitudes of times faster. I also integrated the solid project which I had discovered in this time period as I realised the purpose of the solid project was incredibly similiar to a large aspect of datacentral.
+## Early Experiments: Kivy, JSON, and Electron
 
+The first implementation was built using Kivy. To address the problem of retrieval, I designed a “tagger” system that associated semantic tags with pieces of data. These tags were meant to become the building blocks of the structure that the data would eventually take.
+
+However, I soon realised that Kivy could not provide the level of customisability I needed. HTML offered far more flexibility, so I built a converter that transformed Kivy objects into JSON, which I then rendered as HTML inside Electron. Although this approach worked, the architecture became increasingly convoluted. Communication between Kivy, the converter, and Electron relied on an event‑bus system that grew fragile over time. After one particularly disruptive error, I recognised that the codebase had become too tangled to maintain, and starting over was the only viable option.
+
+---
+
+## Rebuilding as a Web Application
+
+I rebuilt the system from scratch as a React web application, drawing on my prior experience with the framework. This time, I separated the program’s functions into independent web pages. One of these pages — a text editor — became the foundation for a new version of the tagger.
+
+The project underwent another major reconstruction when I migrated from React to Next.js. By this stage, privacy had become a central principle of Datacentral. The project had evolved into an expression of a broader philosophy: a vision of a new kind of internet built around individual autonomy and data sovereignty, reminiscent of the ideals associated with “Web3.” As part of this shift, each web page became an independent website, which I referred to as “add‑ons.”
+
+---
+
+## Self‑Hosting, Networking, and Infrastructure
+
+At this point, I decided that users should be able to self‑host Datacentral and connect through a decentralised network. After exploring various options, I settled on Yggdrasil. Over the course of a year, I developed a system that packaged each add‑on into a docker image and created a setup program capable of installing the necessary tools on a user’s machine and running the image. The system also included functionality for deploying the images across a Kubernetes cluster — a feature that remains dormant for now but reflects the original multi‑machine vision.
+
+I later added a self‑hosted database, drawing on the programming principles I had gradually learned through experience and through resources such as dev.to. This required rewriting most of the add‑ons yet again, a process that took another year.
+
+---
+
+## Catastrophic Data Loss and a New Direction
+
+Just as the system finally became functional, my computer suffered a severe BIOS error. This occurred shortly after my Google accounts had been compromised, leaving my local machine as the sole repository of all my data. The failure resulted in the loss of everything — not only Datacentral, but also the years of notes that had originally motivated its creation. The only surviving file was the one responsible for generating the Kubernetes architecture.
+
+This event fundamentally changed the direction of Datacentral. Until then, the system had been tightly coupled to the Google Drive API, which complicated the codebase and constrained the design. The loss of my Google data removed this dependency entirely. It also forced me to confront the messy legacy code that had accumulated over the years. Rewriting the add‑ons from scratch made them dramatically faster and cleaner.
+
+During this period, I also discovered the Solid project. Its emphasis on personal data pods aligned closely with the philosophical foundations of Datacentral, and integrating Solid became a natural extension of the system’s evolution.
+
+---
+
+## Summary
+
+Datacentral has undergone multiple transformations — from a Kivy prototype, to an Electron‑based hybrid, to a React application, to a Next.js ecosystem of modular add‑ons. Along the way, it has absorbed lessons about privacy, data sovereignty, decentralised networking, and the importance of clean architecture. The project continues to evolve, shaped by both technical challenges and philosophical commitments.
