@@ -1,4 +1,4 @@
-[Research](index.md) | [Datacentral](https://github.com/datacentral-creator/Datacentral) | [History](https://github.com/datacentral-creator/Datacentral/blob/main/Theory/History.md)
+[Research](https://datacentral-creator.github.io/) | [Datacentral](https://github.com/datacentral-creator/Datacentral) | [History](https://github.com/datacentral-creator/Datacentral/blob/main/Theory/History.md)
 
 # A Brief History of Datacentral
 
