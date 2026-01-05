@@ -1,1 +1,1 @@
-{"file_set": "http://localhost:3003", "file_read": "http://localhost:3001", "file_edit": "http://localhost:3002"}
+{"file_set": "http://localhost:3003", "file_read": "http://localhost:3001", "file_edit": "http://localhost:3002","package_manager": "http://localhost:3004"}

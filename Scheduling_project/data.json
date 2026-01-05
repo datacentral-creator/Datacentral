@@ -1,0 +1,895 @@
+{
+ "2025-12-21": {
+  "16:43": {
+   "effort": "4.45",
+   "units": "minutes",
+   "task": "Physics - projectile motion",
+   "retention_factor": "1",
+   "n": "10"
+  },
+  "16:50": {
+   "effort": "4.82",
+   "units": "minutes",
+   "task": "Physics - rotational kinetic energy",
+   "retention_factor": "0.83",
+   "n": "10"
+  },
+  "16:56": {
+   "effort": "3.77",
+   "units": "minutes",
+   "task": "Physics - Current-Voltage Characteristics",
+   "retention_factor": "1",
+   "n": "10"
+  },
+  "17:02": {
+   "effort": "4.7",
+   "units": "minutes",
+   "task": "Physics - Young modulus",
+   "retention_factor": "0.86",
+   "n": "10"
+  },
+  "17:17": {
+   "effort": "6.18",
+   "units": "minutes",
+   "task": "Physics - polarisation",
+   "retention_factor": "0.88",
+   "n": "10"
+  },
+  "17:27": {
+   "effort": "7",
+   "units": "minutes",
+   "task": "Physics - refraction",
+   "retention_factor": "0.8",
+   "n": "25"
+  },
+  "18:55": {
+   "effort": "3.65",
+   "units": "minutes",
+   "task": "Physics - Energy levels in atoms",
+   "retention_factor": "0.83",
+   "n": "11"
+  },
+  "19:02": {
+   "effort": "5.42",
+   "units": "minutes",
+   "task": "Physics - absorption & emission spectra",
+   "retention_factor": "1",
+   "n": "20"
+  },
+  "19:09": {
+   "effort": "5.77",
+   "units": "minutes",
+   "task": "Physics - circular motion ",
+   "retention_factor": "1",
+   "n": "15"
+  },
+  "19:14": {
+   "effort": "3.23",
+   "units": "minutes",
+   "task": "Physics - circular motion",
+   "retention_factor": "1",
+   "n": "10",
+   "strength":47.4561079
+  },
+  "19:21": {
+   "effort": "3.57",
+   "units": "minutes",
+   "task": "Physics - Ideal Gases",
+   "retention_factor": "0.86",
+   "n": "10"
+  },
+  "19:37": {
+   "effort": "4.12",
+   "units": "minutes",
+   "task": "Physics - Ideal gases",
+   "retention_factor": "0.83",
+   "n": "10",
+   "strength": 85.8693513
+  }
+ },
+ "2025-12-22": {
+  "19:59": {
+   "effort": "3",
+   "units": "repetitions",
+   "task": "A2 maths - discriminant",
+   "retention_factor": 0.6,
+   "n": 5
+  },
+  "20:10": {
+   "effort": "1.5",
+   "units": "repetitions",
+   "task": "A2 maths - direct proof",
+   "retention factor": 0.8,
+   "n": 5
+  },
+  "20:14": {
+   "effort": "1",
+   "units": "repetitions",
+   "task": "A2 maths - proof by exhaustion",
+   "retention factor": 1,
+   "n": 14
+  },
+  "20:19": {
+   "effort": 1.5,
+   "units": "repetitions",
+   "task": "A2 maths - disproof by counterexample",
+   "retention factor": 0.5,
+   "n": 5
+  },
+  "20:24": {
+   "effort": 1,
+   "units": "repetitions",
+   "task": "A2 maths - disproof by contradiction",
+   "retention factor": 1,
+   "n": 7
+  },
+  "20:49": {
+  "effort": 1,
+  "units": "repetitions",
+  "task": "A2 maths - trigonometry with radians",
+   "retention factor": 0.75,
+   "n": 4
+ }
+ },"2025-12-23": {
+ "17:39": {
+  "effort": 2,
+  "units": "repetitions",
+  "task": "Biology - Chemical elements and biological compounds",
+  "retention factor": 0.6875,
+  "n": 16
+ },
+ "18:05": {
+  "effort": 1.5,
+  "units": "repetitions",
+  "task": "Biology - Cell structure and organisation",
+  "retention factor": 0.72,
+  "n": 11
+ }
+},"2025-12-24": {
+ "11:13": {
+ "effort": 3,
+ "units": "repetitions",
+ "task": "Biology - Cell structure and organisation",
+ "retention factor": 0.57,
+ "n": 14
+},
+"14:48": {
+ "effort": "1.2",
+ "units": "repetitions",
+ "task": "Biology - Enzymes and biological reactions",
+ "retention factor": 0.86,
+ "n": 14
+},
+ "16:33": {
+  "effort": 1,
+  "units": "repetitions",
+  "task": "Biology - Nucleic acids and their functions",
+  "retention factor": 0.89,
+  "n": 18
+ },
+ "16:38": {
+  "effort": 1,
+  "units": "repetitions",
+  "task": "Biology - The cell cycle and cell division",
+  "retention factor": 0.9,
+  "n": 14
+ }
+},
+ "2025-12-28": {
+  "11:52": {
+   "effort": 1,
+   "units": "repetitions",
+   "task": "Chemistry - Basic ideas about atoms",
+   "retention factor": 0.78,
+   "n": 9
+  },
+  "12:01": {
+   "effort": 1,
+   "units": "repetitions",
+   "task": "Chemistry - Chemical calculations",
+   "retention factor": 0.65,
+   "n": 5
+  },
+  "12:03": {
+   "effort": 1,
+   "units": "repetitions",
+   "task": "Chemistry - bonding",
+   "retention factor":0.5,
+   "n": 5
+  },
+  "12:20": {
+   "effort": 1,
+   "units": "repetitions",
+   "task": "Chemistry - Solid structures",
+   "retention factor": 0.8,
+   "n": 5
+  },
+  "12:33": {
+   "effort": 1,
+   "units": "repetitions",
+   "task": "Chemistry - The periodic table",
+   "retention factor": 0.7,
+   "n": 5
+  },
+  "12:34": {
+   "effort": 1,
+   "units": "repetitions",
+   "task": "Chemistry - Simple equilibria and base-acid reactions",
+   "retention factor": 0.75,
+   "n": 5
+  },
+  "13:07": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Projectile Motion - Components of velocity",
+    "n": 2,
+    "retention_factor": 0.5,
+    "feedback": "Components reversed: horizontal is vcos(theta), vertical is vsin(theta)."
+  },
+  "13:11": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Projectile Motion - Assumptions",
+    "n": 3,
+    "retention_factor": 0.66,
+    "feedback": "Correct. Also assumes no air resistance and constant gravitational field."
+  },
+  "13:15": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Projectile Motion - Time of flight",
+    "n": 3,
+    "retention_factor": 0.33,
+    "feedback": "Partially correct. SUVAT is used, but the answer needs the specific vertical-motion reasoning."
+  },
+  "13:19": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Projectile Motion - Horizontal range",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct: range = horizontal velocity × time of flight."
+  },
+  "13:23": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Projectile Motion - Independence of motions",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct. Motions are independent because forces act on separate axes."
+  },
+  "13:27": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Projectile Motion - Effect of air resistance",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct. Air resistance reduces horizontal range and maximum height."
+  },
+  "13:31": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Projectile Motion - Angle for maximum range",
+    "n": 1,
+    "retention_factor": 1,
+    "feedback": "Correct for ideal projectile motion: 45 degrees gives maximum range."
+  },
+  "13:36": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Rotational KE - Expression",
+    "n": 2,
+    "retention_factor": 0.5,
+    "feedback": "Almost correct. Missing the 1/2. Formula is 1/2 I omega^2. I is moment of inertia, not impulse."
+  },
+  "13:41": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Rotational KE - Rotational vs translational",
+    "n": 3,
+    "retention_factor": 0.33,
+    "feedback": "Rotational KE depends on angular velocity and moment of inertia; translational KE depends on linear velocity and mass."
+  },
+  "13:46": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Rotational KE - Effect of moment of inertia",
+    "n": 2,
+    "retention_factor": 0,
+    "feedback": "Incomplete. Moment of inertia determines resistance to angular acceleration."
+  },
+  "13:51": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Rotational KE - Solid vs hollow sphere",
+    "n": 3,
+    "retention_factor": 0,
+    "feedback": "Moment of inertia is the rotational equivalent of mass — worth revisiting."
+  },
+  "13:56": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Rotational KE - Rolling without slipping",
+    "n": 3,
+    "retention_factor": 0,
+    "feedback": "You indicated you didn’t understand — review energy distribution between translational and rotational KE."
+  },
+  "14:01": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Rotational KE - Larger I → slower acceleration",
+    "n": 2,
+    "retention_factor": 0,
+    "feedback": "This indicates a gap in content coverage — mark for later study."
+  },
+  "14:06": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "I–V Characteristics - Filament lamp",
+    "n": 3,
+    "retention_factor": 0.33,
+    "feedback": "Close but incomplete. The curve flattens because resistance increases with temperature."
+  },
+  "14:11": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "I–V Characteristics - Diode",
+    "n": 2,
+    "retention_factor": 0.5,
+    "feedback": "Partially correct. A diode conducts when forward-biased due to the p-n junction barrier."
+  },
+  "14:16": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "I–V Characteristics - Thermistor",
+    "n": 3,
+    "retention_factor": 0,
+    "feedback": "Incorrect. Thermistors are non-ohmic; their resistance changes with temperature."
+  },
+  "14:21": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "I–V Characteristics - Non-ohmic behaviour",
+    "n": 2,
+    "retention_factor": 0.5,
+    "feedback": "Close. Non-ohmic means current is not proportional to voltage."
+  },
+  "14:26": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "I–V Characteristics - Semiconductor temperature dependence",
+    "n": 3,
+    "retention_factor": 0,
+    "feedback": "Incorrect. Semiconductors do not become superconductors; resistance decreases due to more charge carriers."
+  },
+
+  "14:31": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Young Modulus - Definitions",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct definitions."
+  },
+  "14:36": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Young Modulus - Experiment",
+    "n": 4,
+    "retention_factor": 1,
+    "feedback": "Very good description of the method."
+  },
+  "14:41": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Young Modulus - Thin and long wire",
+    "n": 2,
+    "retention_factor": 0,
+    "feedback": "No answer provided yet."
+  },
+  "14:46": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Young Modulus - Limit of proportionality",
+    "n": 1,
+    "retention_factor": 1,
+    "feedback": "Correct. It’s the point where Hooke’s law stops applying."
+  },
+  "14:51": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Young Modulus - Elastic vs plastic",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct and clearly stated."
+  }},
+  "14:56": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - polarisation: plane-polarised light",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct definition: plane-polarised light vibrates in a single plane."
+  },
+  "15:00": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - polarisation: how a polarising filter works",
+    "n": 3,
+    "retention_factor": 0,
+    "feedback": "Incorrect. A polarising filter absorbs oscillations in all but one plane; it does not rely on reflection at 45°."
+  },
+  "15:04": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - polarisation: why only transverse waves can be polarised",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct. Only transverse waves have oscillations perpendicular to motion that can be restricted to a plane."
+  },
+  "15:08": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - polarisation: use in sunglasses",
+    "n": 3,
+    "retention_factor": 0.33,
+    "feedback": "Partially correct. Polarised sunglasses block horizontally-polarised reflected light to reduce glare."
+  },
+  "15:12": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - polarisation: two filters at 90 degrees",
+    "n": 1,
+    "retention_factor": 1,
+    "feedback": "Correct. Perpendicular filters block all light."
+  },
+  "15:16": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - refraction: Snell's law",
+    "n": 2,
+    "retention_factor": 0,
+    "feedback": "Incorrect. Snell's law is n1*sin(theta1) = n2*sin(theta2). You mixed it with the critical angle formula."
+  },
+  "15:20": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - refraction: refractive index",
+    "n": 2,
+    "retention_factor": 0.5,
+    "feedback": "Partially correct. Refractive index is c/v, where v is the speed of light in the material."
+  },
+  "15:24": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - refraction: total internal reflection",
+    "n": 3,
+    "retention_factor": 0,
+    "feedback": "Incorrect. TIR occurs when light travels from a denser to a less dense medium and the angle of incidence exceeds the critical angle."
+  },
+  "15:28": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - refraction: bending towards the normal",
+    "n": 3,
+    "retention_factor": 0.33,
+    "feedback": "Partially correct. Light slows down in a denser medium, causing the wavefront to pivot toward the normal. Wavelength decreases, not increases."
+  },
+  "15:32": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - refraction: optical fibres",
+    "n": 3,
+    "retention_factor": 0.66,
+    "feedback": "Mostly correct. Optical fibres rely on repeated total internal reflection inside a high-index core surrounded by lower-index cladding."
+  },
+  "15:36": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Energy levels in atoms: quantised energy levels",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct. Electrons occupy discrete energy levels and require specific quanta to move between them."
+  },
+  "15:40": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Energy levels in atoms: absorption spectra",
+    "n": 3,
+    "retention_factor": 0.66,
+    "feedback": "Mostly correct. Absorption occurs when electrons absorb photons matching the energy gap between levels."
+  },
+  "15:44": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Energy levels in atoms: photon emission",
+    "n": 2,
+    "retention_factor": 0.5,
+    "feedback": "Partially correct. Electrons emit photons to release the exact energy difference between levels."
+  },
+  "15:48": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Energy levels in atoms: wavelength of emitted radiation",
+    "n": 2,
+    "retention_factor": 0.5,
+    "feedback": "Partially correct. Wavelength depends on the energy difference between levels via E = hc/λ."
+  },
+  "15:52": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Energy levels in atoms: uniqueness of emission spectra",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct. Each element has a unique electronic structure, giving unique spectral lines."
+  },
+  "15:56": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - circular motion: definition of centripetal force",
+    "n": 1,
+    "retention_factor": 1,
+    "feedback": "Correct. Centripetal force acts toward the centre of the circular path."
+  },
+  "16:00": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - circular motion: why no work is done",
+    "n": 2,
+    "retention_factor": 0,
+    "feedback": "Incorrect. No work is done because centripetal force is perpendicular to velocity."
+  },
+  "16:04": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - circular motion: derivation of F = mv^2/r",
+    "n": 2,
+    "retention_factor": 1,
+    "feedback": "Correct. Using a = v^2/r and F = ma gives F = mv^2/r."
+  },
+  "16:08": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - circular motion: factors affecting centripetal acceleration",
+    "n": 2,
+    "retention_factor": 0,
+    "feedback": "Incorrect. Centripetal acceleration depends on speed and radius, not mass."
+  },
+  "16:12": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - circular motion: why objects feel heavier at the bottom",
+    "n": 3,
+    "retention_factor": 0,
+    "feedback": "Incorrect. Objects feel heavier because tension/normal force must exceed weight to provide centripetal force."
+  },
+  "2025-12-29": {
+  "18:42": {
+    "effort": 1.5,
+    "units": "repetitions",
+    "task": "Physics - refraction: bending towards the normal",
+    "retention_factor": 0.85,
+    "n": 4,
+    "feedback": "Clear improvement. You now understand that the wavefront pivots because one side slows first."
+  },
+  "18:48": {
+    "effort": 1.2,
+    "units": "repetitions",
+    "task": "Physics - refraction: wavelength and frequency changes",
+    "retention_factor": 1,
+    "n": 3,
+    "feedback": "Correct: frequency stays constant, wavelength decreases in denser media."
+  },
+  "18:55": {
+    "effort": 1.5,
+    "units": "repetitions",
+    "task": "Physics - total internal reflection",
+    "retention_factor": 0.9,
+    "n": 4,
+    "feedback": "Good understanding of critical angle and why TIR only occurs from dense to less dense."
+  },
+  "19:03": {
+    "effort": 2,
+    "units": "repetitions",
+    "task": "Physics - semiconductors: p-type and n-type",
+    "retention_factor": 0.8,
+    "n": 5,
+    "feedback": "Solid grasp of doping with group 3 and 5 elements and why holes/electrons form."
+  },
+  "19:10": {
+    "effort": 1.8,
+    "units": "repetitions",
+    "task": "Physics - semiconductors: depletion region",
+    "retention_factor": 0.75,
+    "n": 5,
+    "feedback": "Improved understanding of fixed ions and the built-in electric field."
+  },
+  "19:18": {
+    "effort": 1.5,
+    "units": "repetitions",
+    "task": "Physics - semiconductors: forward and reverse bias",
+    "retention_factor": 0.85,
+    "n": 4,
+    "feedback": "Correct: forward bias pushes carriers toward the junction, shrinking the depletion region."
+  },
+  "19:26": {
+    "effort": 1.3,
+    "units": "repetitions",
+    "task": "Physics - circular motion: tension at the bottom of a vertical circle",
+    "retention_factor": 0.9,
+    "n": 3,
+    "feedback": "You now understand why T = mg + mv^2/r and why objects feel heavier at the bottom."
+  }
+},
+  "2026-01-01": {
+  "21:16": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - projectile motion",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Reviewed vertical velocity, time of flight, and independence of motions."
+  },
+  "21:16-2": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - rotational kinetic energy",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Focused on formula, moment of inertia, and rolling without slipping."
+  },
+  "21:16-3": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Current-Voltage Characteristics",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Covered filament lamp, diode, thermistor, and semiconductor behavior."
+  },
+  "21:16-4": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Young modulus",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Reviewed definitions, experiment setup, and thin wire reasoning."
+  },
+  "21:16-5": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - polarisation",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Focused on polarising filters, sunglasses, and transverse wave applications."
+  },
+  "21:16-6": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - refraction",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Reviewed Snell’s law, refractive index, TIR, and optical fibres."
+  },
+  "21:16-7": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - Energy levels in atoms",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Covered absorption/emission spectra, photon emission, and wavelength relations."
+  },
+  "21:16-8": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Physics - circular motion",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Reviewed centripetal force, work done, and tension at bottom of circle."
+  },
+  "21:16-9": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "A2 maths - proof methods",
+    "retention_factor": 0.9,
+    "n": 1,
+    "feedback": "Practiced discriminant, direct proof, exhaustion, contradiction, and counterexample."
+  },
+  "21:16-10": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Biology - nucleic acids and cell structure",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Reviewed nucleic acids, cell structure, enzymes, and cell cycle."
+  },
+  "21:16-11": {
+    "effort": 1,
+    "units": "repetitions",
+    "task": "Chemistry - bonding and calculations",
+    "retention_factor": 1,
+    "n": 1,
+    "feedback": "Covered bonding, periodic table, equilibria, and chemical calculations."
+  }
+},
+  "Physics - projectile motion": [
+    "2025-12-21:16:43",
+    "2025-12-28:13:07",
+    "2025-12-28:13:11",
+    "2025-12-28:13:15",
+    "2025-12-28:13:19",
+    "2025-12-28:13:23",
+    "2025-12-28:13:27",
+    "2025-12-28:13:31"
+  ],
+
+  "Physics - rotational kinetic energy": [
+    "2025-12-21:16:50",
+    "2025-12-28:13:36",
+    "2025-12-28:13:41",
+    "2025-12-28:13:46",
+    "2025-12-28:13:51",
+    "2025-12-28:13:56",
+    "2025-12-28:14:01"
+  ],
+
+  "Physics - Current-Voltage Characteristics": [
+    "2025-12-21:16:56",
+    "2025-12-28:14:06",
+    "2025-12-28:14:11",
+    "2025-12-28:14:16",
+    "2025-12-28:14:21",
+    "2025-12-28:14:26"
+  ],
+
+  "Physics - Young modulus": [
+    "2025-12-21:17:02",
+    "2025-12-28:14:31",
+    "2025-12-28:14:36",
+    "2025-12-28:14:41",
+    "2025-12-28:14:46",
+    "2025-12-28:14:51"
+  ],
+
+  "Physics - polarisation": [
+    "2025-12-21:17:17",
+    "2025-12-28:15:00",
+    "2025-12-28:15:04",
+    "2025-12-28:15:08",
+    "2025-12-28:15:12"
+  ],
+
+  "Physics - refraction": [
+    "2025-12-21:17:27",
+    "2025-12-28:15:16",
+    "2025-12-28:15:20",
+    "2025-12-28:15:24",
+    "2025-12-28:15:28",
+    "2025-12-28:15:32"
+  ],
+
+  "Physics - Energy levels in atoms": [
+    "2025-12-21:18:55",
+    "2025-12-28:15:36",
+    "2025-12-28:15:40",
+    "2025-12-28:15:44",
+    "2025-12-28:15:48",
+    "2025-12-28:15:52"
+  ],
+
+  "Physics - absorption & emission spectra": [
+    "2025-12-21:19:02"
+  ],
+
+  "Physics - circular motion ": [
+    "2025-12-21:19:09",
+    "2025-12-21:19:14",
+    "2025-12-28:15:56",
+    "2025-12-28:16:00",
+    "2025-12-28:16:04",
+    "2025-12-28:16:08",
+    "2025-12-28:16:12"
+  ],
+
+  "Physics - Ideal Gases": [
+    "2025-12-21:19:21"
+  ],
+
+  "Physics - Ideal gases": [
+    "2025-12-21:19:37"
+  ],
+
+  "A2 maths - discriminant": [
+    "2025-12-22:19:58"
+  ],
+
+  "A2 maths - direct proof": [
+    "2025-12-22:20:10"
+  ],
+
+  "A2 maths - disproof by counterexample": [
+    "2025-12-22:20:19"
+  ],
+
+  "A2 maths - disproof by contradiction": [
+    "2025-12-22:20:24"
+  ],
+
+  "A2 maths - trigonometry with radians": [
+    "2025-12-22:20:49"
+  ],
+
+  "Biology - Chemical elements and biological compounds": [
+    "2025-12-23:17:39"
+  ],
+
+  "Biology - Cell structure and organisation": [
+    "2025-12-23:18:05"
+  ],
+
+  "Biology - Enzymes and biological reactions": [
+    "2025-12-24:14:38"
+  ],
+
+  "Biology - Cell membranes and transport": [
+    "2025-12-24:11:13"
+  ],
+
+  "Biology - nucleic acids and their functions": [
+    "2025-12-24:16:33"
+  ],
+
+  "Biology - The cell cycle and cell division": [
+    "2025-12-24:16:38"
+  ],
+
+  "Chemistry - Basic ideas about atoms": [
+    "2025-12-28:11:52"
+  ],
+
+  "Chemistry - Simple equilibria and base-acid reactions": [
+    "2025-12-28:12:01"
+  ],
+
+  "Chemistry - The periodic table": [
+    "2025-12-28:12:03"
+  ],
+
+  "Chemistry - Solid structures": [
+    "2025-12-28:12:20"
+  ],
+
+  "Chemistry - bonding": [
+    "2025-12-28:12:30"
+  ],
+
+  "Chemistry - Chemical calculations": [
+    "2025-12-28:12:33"
+  ],
+"Physics - refraction: bending towards the normal": [
+  "2025-12-29:18:42"
+],
+
+"Physics - refraction: wavelength and frequency changes": [
+  "2025-12-29:18:48"
+],
+
+"Physics - total internal reflection": [
+  "2025-12-29:18:55"
+],
+
+"Physics - semiconductors: p-type and n-type": [
+  "2025-12-29:19:03"
+],
+
+"Physics - semiconductors: depletion region": [
+  "2025-12-29:19:10"
+],
+
+"Physics - semiconductors: forward and reverse bias": [
+  "2025-12-29:19:18"
+],
+
+"Physics - circular motion: tension at the bottom of a vertical circle": [
+  "2025-12-29:19:26"
+]
+}
