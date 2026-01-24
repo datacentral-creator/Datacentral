@@ -12,4 +12,5 @@
 <h2>Locally</h>
 Coming soon...
 (Add ons wil be built as apps)
+
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
