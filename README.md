@@ -9,7 +9,7 @@
     <li>Choose "Configure network" if you wish to run datacentral on that computer or you can run Server.exe on one computer and run the GUI on another computer using "Connect to network"</li>
     <li>Create an account at localhost:3000 and create a pod called "poddy" to use the solid based add ons</li>
   </ol> 
-<h2>Locally</h>
+<h2>Locally</h2>
 Coming soon...
 (Add ons wil be built as apps)
 
