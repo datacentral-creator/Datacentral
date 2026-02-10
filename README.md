@@ -13,5 +13,10 @@
 <ol>
     <li>Download the app from <a href=https://drive.google.com/drive/folders/1ybxwCeh7UPWqyliDBnq135hPyD_FrkKH?usp=sharing>here</a></li>
     <li>Run the app</li>
+    <li></li>
 </ol> 
+<h3>If you want to connect it to the server component</h3>
+<ol>
+  <li>Install tailscale on your phone</li>
+</ol>
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
