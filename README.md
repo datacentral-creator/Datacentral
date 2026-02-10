@@ -13,7 +13,6 @@
 <ol>
     <li>Download the app from <a href=https://drive.google.com/drive/folders/1ybxwCeh7UPWqyliDBnq135hPyD_FrkKH?usp=sharing>here</a></li>
     <li>Run the app</li>
-    <li></li>
 </ol> 
 <h3>If you want to connect it to the server component</h3>
 <ol>
