@@ -17,5 +17,6 @@
 <h3>If you want to connect it to the server component</h3>
 <ol>
   <li>Install tailscale on your phone</li>
+  <li>Sign in to the same network on your computer</li>
 </ol>
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
