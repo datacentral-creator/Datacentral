@@ -20,7 +20,7 @@
   <li>Sign in to the same network on your computer</li>
 </ol>
 <h1>Using the app</h1>
-<p>If server not present skip steps 1-4</p>
+<p>If you are only using the app locally skip steps 1-4</p>
 <ol>
   <li>Press the "Connection settings" button at the top of the page</li>
   <li>Input the tailscale ip adress of the computer running the server component as well as the username and password set up on the "File server" on the server component</li>
