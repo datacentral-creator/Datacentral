@@ -1,5 +1,6 @@
-<h1>How to open datacentral</h1>
-<h2>Remotely</h2>
+<h1>Datacentral installation</h1>
+<h2>Desktop</h2>
+<h3>Legacy</h3>
   <ol>
     <li>Clone this repo/download the files </li>
     <li>Download the add ons from <a href="https://drive.google.com/drive/folders/1cJYGMm6Aftqti8qN181DWwTC-rRK3Q2z?usp=drive_link">here</a> into the same directory as these files (legacy)</li>
@@ -9,7 +10,12 @@
     <li>Choose "Configure network" if you wish to run datacentral on that computer or you can run Server.exe on one computer and run the GUI on another computer using "Connect to network"</li>
     <li>Create an account at localhost:3000 and create a pod called "poddy" to use the solid based add ons</li>
   </ol> 
-<h2>Locally</h2>
+<h3>Contemporary</h3>
+<ol>
+  <li>Clone this repo/download the files</li>
+  <li>Run "main.exe" <-- Other files are add ons that can be installed from this file (It acts as a sort of package manager)</li>
+</ol>
+<h2>Mobile</h2>
 <ol>
     <li>Download the app from <a href=https://drive.google.com/drive/folders/1ybxwCeh7UPWqyliDBnq135hPyD_FrkKH?usp=sharing>here</a></li>
     <li>Run the app</li>
