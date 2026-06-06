@@ -1,0 +1,11 @@
+{
+  "wsl": "W",
+  "Kubernetes_setup": "K",
+  "Helm_setup": "H",
+  "Helmfile_setup": "F",
+  "Setup_solid": "S",
+  "Yggdrasil": "Y",
+  "File_server": "I",
+  "Load_extensions": "E",
+  "Projects": "P"
+}
