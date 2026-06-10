@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schematic pipeline</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+    }
+    .calendar {
+      flex: 0 0 80%;
+      padding: 20px;
+      background: #fff;
+      border-right: 2px solid #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .calendar-header {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .calendar-header h1 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+    }
+    select {
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      max-height: 150px; /* allow scrolling */
+      overflow-y: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 800px;
+      background: #fafafa;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 15px;
+    }
+    th {
+      background: #3498db;
+      color: #fff;
+    }
+    td {
+      height: 80px;
+      transition: background 0.3s;
+    }
+    td:hover {
+      background: #ecf0f1;
+      cursor: pointer;
+    }
+    .input-menu {
+      flex: 0 0 20%;
+      padding: 30px;
+      background: #f0f4f8;
+    }
+    .input-menu h2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #34495e;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+    input[type="text"], select.form-select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px;
+      background: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .day-wheel {
+      max-height: 100px;
+      overflow-y: auto;
+      margin-top: 5px;
+      font-size: 0.8rem;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .day-wheel div {
+      padding: 4px;
+      cursor: pointer;
+    }
+    .day-wheel div:hover {
+      background: #e0e0e0;
+    }
+    .scroll {
+      flex: 0 0 20%;
+      background-color: #fed9ff;
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
+      border-left: 2px solid #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Data_analysis{
+      display: none
+    }
+
+    #setpoints h1 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #6c3483;
+    }
+
+    #setpoints p {
+      background: #ffffff;
+      padding: 10px 12px;
+      margin: 8px 0;
+      width: 90%;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="scroll" id="setpoints">
+    <h1>Setpoints</h1>
+  </div>
+  <div class="calendar">
+    <div class="calendar-header">
+      <h1 id="monthYear"></h1>
+      <select id="monthSelect"></select>
+      <button id="yearToggle"></button>
+      <select id="yearSelect" size="6" style="display:none;"></select>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+          <th>Thu</th><th>Fri</th><th>Sat</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody"></tbody>
+    </table>
+  </div>
+  <div class="Data_analysis">
+    <div style="display: flex;flex-direction: column;">
+      <h1>Select a file</h1>
+      <select id="Files">
+      </select>
+      <h1>View</h1>
+      <select id="options">
+        <option>View graph</option>
+        <option>View statistics</option>
+      </select>
+      <select id="Data_column">
+        <option>Column one</option>
+        <option>Column two</option>
+        <option>Joint</option>
+      </select>
+      <canvas id="Data" style="width:100%;max-width:700px"></canvas>
+      <div id="Statistics"></div>
+    </div>
+  </div>
+  <div class="input-menu" >
+    <h2>Input data</h2>
+    <h3>Select schematic</h3>
+    <select name="Schematic_chooser" id="Schematic_chooser">
+    <option value="default">Default schematic (task chooser)</option>
+    <option value="custom">Custom schematic</option>
+    </select>
+    <form action="/submit" method="POST" id="Form_schematic">
+    </form>
+  </div>
+
+  <script
+src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0">
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+  <script>
+    const El_used = []
+    const Data_table = document.getElementById("Data_column")
+    function CreateStatistics(Data,index){
+      const Statistics = document.getElementById("Statistics")
+      while (Statistics.firstChild){
+            Statistics.removeChild(Statistics.firstChild)
+      }
+      const Header = document.createElement("h2")
+      Header.innerText = "Statistics:"
+      Statistics.appendChild(Header)
+      const Statistics_el_minus_one = document.createElement("h3")
+      Statistics_el_minus_one.innerText = "Minimum: " + Math.min(...Data[index])
+      Statistics.appendChild(Statistics_el_minus_one)
+      const Statistics_el_zero = document.createElement("h3")
+      Statistics_el_zero.innerText = "Maximum: " + Math.max(...Data[index])
+      Statistics.appendChild(Statistics_el_zero)
+      const Statistics_el = document.createElement("h3")
+      const Total = Data[index].reduce((total,current)=>total+current,0)
+      Statistics_el.innerText = "Total: "+Total
+      Statistics.appendChild(Statistics_el)
+      const Statistics_el_two = document.createElement("h3")
+      Statistics_el_two.innerText = "Length: "+Data[index].length
+      Statistics.appendChild(Statistics_el_two)
+      const Statistics_el_three = document.createElement("h3")
+      Statistics_el_three.innerText = "Mean: "+Total/Data[index].length
+      const Mean = Total/Data[index].length
+      Statistics.appendChild(Statistics_el_three)
+      const Statistics_el_five = document.createElement("h3")
+      const Variance = (Data[index].reduce((accumulator,el)=>accumulator+Math.pow((el-Mean),2),0)/Data[index].length)
+      Statistics_el_five.innerText = "Variance: "+ Variance
+      Statistics.appendChild(Statistics_el_five)
+      const Statistics_el_six = document.createElement("h3")
+      Statistics_el_six.innerText = "Standard deviation: "+ Math.sqrt(Variance)
+      Statistics.appendChild(Statistics_el_six)
+    }
+    function Menu(event){
+      switch (event.target.value){
+        case "custom":
+          const Schematic_menu = document.getElementById("Form_schematic")
+          Schematic_menu.action = "/submit_custom"
+          while (Schematic_menu.firstChild){
+            Schematic_menu.removeChild(Schematic_menu.firstChild)
+          }
+          const Group_custom =  document.createElement("div")
+          Group_custom.className="form-group"
+          Schematic_menu.appendChild(Group_custom)
+          const Task_label_custom = document.createElement("label")
+          Task_label_custom.htmlFor = "tasks"
+          Task_label_custom.innerText = "Task: "
+          Group_custom.appendChild(Task_label_custom)
+          const Tasks_input_custom = document.createElement("input")
+          Tasks_input_custom.type = "text"
+          Tasks_input_custom.id = "tasks"
+          Tasks_input_custom.name = "tasks"
+          Tasks_input_custom.placeholder = "tasks"
+          Group_custom.appendChild(Tasks_input_custom)
+          const Group_two_custom = document.createElement("div")
+          Group_two_custom.className = "form-group"
+          Schematic_menu.appendChild(Group_two_custom)
+          const Data_label = document.createElement("label")
+          Data_label.htmlFor = "Data"
+          Data_label.innerText = "Data: "
+          Group_two_custom.appendChild(Data_label)
+          const Data_input = document.createElement("input")
+          Data_input.type = "file"
+          Data_input.name = "Data"
+          Data_input.id = "Data"
+          Data_input.accept = ".txt"
+          Data_input.addEventListener("input",function(event){
+            for (let file in event.target.files){
+              if (file.startsWith("0") | file.startsWith("1")| file.startsWith("2")| file.startsWith("3")| file.startsWith("4")| file.startsWith("5")| file.startsWith("6")| file.startsWith("7")| file.startsWith("8")| file.startsWith("9")){
+                const Object = event.target.files[file]
+                console.log(Object)
+                const Reader = new FileReader()
+                Reader.onload = () => {
+                  fetch("http://localhost:8000/Write_file",{method:"POST",headers: { "Content-Type": "application/json; charset=UTF-8" },
+body: JSON.stringify({
+file:Object.name,
+content: Reader.result,
+})})
+                }
+                Reader.readAsText(Object)
+              }
+            }
+          })
+          Group_two_custom.appendChild(Data_input)
+          const Submit_button_custom = document.createElement("button")
+          Submit_button_custom.type = "Submit"
+          Submit_button_custom.innerText = "Submit"
+          Schematic_menu.appendChild(Submit_button_custom)
+          const Calendar = document.getElementsByClassName("calendar")[0]
+          Calendar.style.display = "none"
+          const Data_analysis_element = document.getElementsByClassName("Data_analysis")[0]
+          Data_analysis_element.style.display = "flex"
+          const Files_menu = document.getElementById("Files")
+          fetch("http://localhost:8000/Files").then((files)=>{
+            files.json().then((data)=>{
+              for (const el in data){
+                if (!(el in El_used)){
+                  console.log(el,data[el],El_used)
+                  const Option = document.createElement("option")
+                  Option.innerText = data[el]
+                  console.log(Option)
+                  Files_menu.appendChild(Option)
+                  El_used.push(el)
+                }
+              }
+            })
+          })
+          const Data_el = document.getElementById("Data")
+          let Data = []
+          Files_menu.addEventListener("click",(event)=>{
+            const Value = event.target.value
+            fetch("http://localhost:8000/Data/"+Value).then((data)=>data.json().then((data)=>{
+              console.log(data)
+              if(Chart.getChart("Data")) {
+                Chart.getChart("Data")?.destroy()
+              }
+              const Cleaned_data = []
+              for (let el of data){
+                Cleaned_data.push(JSON.parse("["+el+"]"))
+              }
+              Data = Cleaned_data
+              const myChart = new Chart(Data_el, {
+                  type: "scatter",
+                  data: {
+                    labels: Cleaned_data[0],
+                    datasets:[
+                      {data: Cleaned_data[1]}
+                    ]
+                  },
+                  options: {}
+                });
+            }))
+          })
+          const Options = document.getElementById("options")
+          const Statistics = document.getElementById("Statistics")
+          Options.addEventListener("click",(event)=>{
+            if ((event.target.value) !== "View graph"){
+              Data_el.style.display = "none"
+              Statistics.style = "display: flex;flex-direction:column"
+              if (!(Statistics.children.length)){
+                CreateStatistics(Data,0)
+                Data_table.addEventListener("click",(event)=>{
+                  console.log(event.target.value)
+                  if (event.target.value === "Column one"){
+                    CreateStatistics(Data,0)
+                  }
+                  if (event.target.value === "Column two"){
+                    CreateStatistics(Data,1)
+                  }
+                  if (event.target.value === "Joint"){
+                    while (Statistics.firstChild){
+                      Statistics.removeChild(Statistics.firstChild)
+                    }
+                    const X_mean = (Data[0].reduce((accumulator,el)=>accumulator+el,0))/Data[0].length
+                    const Y_mean = (Data[1].reduce((accumulator,el)=>(accumulator+el),0))/Data[1].length
+                    const X_Var = Data[0].reduce((accumulator,el)=>(accumulator+Math.pow(el-X_mean,2)),0)
+                    const Y_Var = Data[1].reduce((accumulator,el)=>(accumulator+Math.pow(el-Y_mean,2)),0)
+                    let Covariance = 0
+                    const Ranked_x = [...Data[0]].sort((a,b)=>a-b)
+                    const Ranked_y = [...Data[1]].sort((a,b)=>a-b)
+                    const Differences = []
+                    let Spearmans = 0
+                    let T = 0
+                    if (Data[0].length < Data[1].length){
+                      Covariance = Data[0].reduce((accumulator,el,i)=>(accumulator+((el-X_mean)*(Data[1][i] - Y_mean))),0)/Data[0].length
+                      Data[0].forEach((el,i)=>Differences.push(Ranked_x.indexOf(el)-Ranked_y.indexOf(Data[1][i])))
+                      Spearmans = 1 - 6*Differences.reduce((accumulator,el)=>accumulator+Math.pow(el,2))/(Data[0].length*(Data[0].length-1))
+                      T = Spearmans*Math.sqrt((Data[0].length-2)/(1-Math.pow(Spearmans,2)))
+                    }else{
+                      Covariance = Data[1].reduce((accumulator,el,i)=>(accumulator+((el-Y_mean)*(Data[0][i] - X_mean))),0)/Data[1].length
+                      Data[1].forEach((el,i)=>Differences.push(Ranked_y.indexOf(el)-Ranked_x.indexOf(Data[0][i])))
+                      Spearmans = 1 - 6*Differences.reduce((accumulator,el)=>accumulator+Math.pow(el,2))/(Data[1].length*(Data[1].length-1))
+                      T = Spearmans*Math.sqrt((Data[1].length-2)/(1-Math.pow(Spearmans,2)))
+                    }
+                    const Statistics_el = document.createElement("h3")
+                    Statistics_el.innerText = "Covariance: " + Covariance
+                    Statistics.appendChild(Statistics_el)
+                    const X_deviation = Math.sqrt(X_Var/Data[0].length)
+                    const Y_deviaton = Math.sqrt(Y_Var/Data[1].length)
+                    const PMCC = Covariance/(X_deviation*Y_deviaton)
+                    const Statistics_el_two = document.createElement("h3")
+                    Statistics_el_two.innerText = "Pearsons product moment correlation coefficent(PMCC): "+PMCC
+                    Statistics.appendChild(Statistics_el_two)
+                    const Test_statistic = PMCC/Math.sqrt((1-Math.pow(PMCC,2))/(Math.min(Data[0].length,Data[1].length)-2))
+                    const p = 2 * (1 - jStat.studentt.cdf(Math.abs(Test_statistic), Math.min(Data[0].length,Data[1].length)-2))
+                    const Statistics_el_three = document.createElement("h3")
+                    Statistics_el_three.innerText = "PMCC P value: " + p
+                    Statistics.appendChild(Statistics_el_three)
+                    const Statistics_el_four = document.createElement("h3")
+                    Statistics_el_four.innerText = "Spearmans rank correlation coefficent: " + Spearmans
+                    Statistics.appendChild(Statistics_el_four)
+                    let P = 2 * (1 - jStat.studentt.cdf(Math.abs(T), Math.min(Data[0].length,Data[1].length)-2))
+                    if (T === Infinity){
+                      P = 0
+                    }
+                    const Statistics_el_five = document.createElement("h3")
+                    Statistics_el_five.innerText = "Spearmans rank correlation coefficent p value: "+P
+                    Statistics.appendChild(Statistics_el_five)
+                  }
+                })
+              }
+            }else{
+              Data_el.style = style="width:100%;max-width:700px"
+              Statistics.style.display = "none"
+            }
+          })
+
+          break
+        default:
+          const Data_analysis = document.getElementsByClassName("Data_analysis")[0]
+          Data_analysis.style.display = "none"
+          const Calendar_custom = document.getElementsByClassName("calendar")[0]
+          Calendar_custom.style.display = "flex"
+          const Schematic_chooser = document.getElementById("Form_schematic")
+          while (Schematic_chooser.firstChild){
+            Schematic_chooser.removeChild(Schematic_chooser.firstChild)
+          }
+          const Group =  document.createElement("div")
+          Group.className="form-group"
+          Schematic_chooser.appendChild(Group)
+          const Task_label = document.createElement("label")
+          Task_label.htmlFor = "tasks"
+          Task_label.innerText = "Tasks: "
+          Group.appendChild(Task_label)
+          const Tasks_input = document.createElement("input")
+          Tasks_input.type = "text"
+          Tasks_input.id = "tasks"
+          Tasks_input.name = "tasks"
+          Tasks_input.placeholder = "task"
+          Group.appendChild(Tasks_input)
+          const Group_two = document.createElement("div")
+          Group_two.className = "form-group"
+          Schematic_chooser.appendChild(Group_two)
+          const Label = document.createElement("label")
+          Label.htmlfor = "retention_factor"
+          Label.innerText = "Retention factor:"
+          Group_two.appendChild(Label)
+          const Retention_factor_input = document.createElement("input")
+          Retention_factor_input.type = "text"
+          Retention_factor_input.id = "retention_factor"
+          Retention_factor_input.name = "retention_factor"
+          Retention_factor_input.placeholder = "retention_factor"
+          Group_two.appendChild(Retention_factor_input)
+          const Group_three = document.createElement("div")
+          Group_three.className = "form-group"
+          Schematic_chooser.appendChild(Group_three)
+          const Number_label = document.createElement("label")
+          Number_label.htmlFor = "n"
+          Number_label.innerText = "Number of data points: "
+          Group_three.appendChild(Number_label)
+          const Number_input = document.createElement("input")
+          Number_input.type = "text"
+          Number_input.name = "n"
+          Number_input.id = "n"
+          Number_input.placeholder = "Number of data points(IE number of questions): "
+          Group_three.appendChild(Number_input)
+          const Group_four = document.createElement("div")
+          Group_four.className = "form-group"
+          Schematic_chooser.appendChild(Group_four)
+          const Learning_label = document.createElement("label")
+          Learning_label.htmlFor = "effort"
+          Learning_label.innerText = "Learning effort: "
+          Group_four.appendChild(Learning_label)
+          const Learning_input = document.createElement("input")
+          Learning_input.type = "text"
+          Learning_input.id = "effort"
+          Learning_input.name = "effort"
+          Learning_input.placeholder = "Enter effort"
+          Group_four.appendChild(Learning_input)
+          const Group_five = document.createElement("div")
+          Group_five.className = "form-group"
+          Schematic_chooser.appendChild(Group_five)
+          const Units_label = document.createElement("label")
+          Units_label.htmlFor = "units"
+          Units_label.innerText = "Units: "
+          Group_five.appendChild(Units_label)
+          const Units_input = document.createElement("select")
+          Units_input.id = "units"
+          Units_input.name = "units"
+          Units_input.className = "form-select"
+          Group_five.appendChild(Units_input)
+          const Minutes_option = document.createElement("option")
+          Minutes_option.value = "minutes"
+          Minutes_option.innerText = "Minutes"
+          Units_input.appendChild(Minutes_option)
+          const Repetitions_option = document.createElement("option")
+          Repetitions_option.value = "repetitions"
+          Repetitions_option.innerText = "Repetitions"
+          Units_input.appendChild(Repetitions_option)
+          const Group_six = document.createElement("div")
+          Group_six.className = "form-group"
+          Schematic_chooser.appendChild(Group_six)
+          const Date_label = document.createElement("label")
+          Date_label.htmlFor = "date"
+          Date_label.innerText = "Date/time:"
+          Schematic_chooser.appendChild(Date_label)
+          const Sub_group = document.createElement("div")
+          Sub_group.style = "display:flex; gap:10px;"
+          const Input_one = document.createElement("input")
+          Input_one.type = "date"
+          Input_one.id = "date"
+          Input_one.name = "date"
+          Sub_group.appendChild(Input_one)
+          const Input_two = document.createElement("input")
+          Input_two.type = "time"
+          Input_two.id = "time"
+          Input_two.name = "time"
+          Sub_group.appendChild(Input_two)
+          Group_six.appendChild(Sub_group)
+          const Submit_button = document.createElement("button")
+          Submit_button.type = "Submit"
+          Submit_button.innerText = "Submit"
+          Schematic_chooser.appendChild(Submit_button)
+          break
+      }
+    }
+    const Schematic_chooser = document.getElementById("Schematic_chooser")
+    Schematic_chooser.addEventListener("change",Menu)
+    Schematic_chooser.addEventListener("click",Menu)
+
+    const monthNames = [
+      "January","February","March","April","May","June",
+      "July","August","September","October","November","December"
+    ];
+    const monthSelect = document.getElementById("monthSelect");
+    const yearSelect = document.getElementById("yearSelect");
+    const monthYear = document.getElementById("monthYear");
+    const calendarBody = document.getElementById("calendarBody");
+
+    // Populate months
+    monthNames.forEach((m,i)=>{
+      const opt=document.createElement("option");
+      opt.value=i; opt.textContent=m;
+      monthSelect.appendChild(opt);
+    });
+
+    // Procedural year generation
+    let minYear = new Date().getFullYear()-5;
+    let maxYear = new Date().getFullYear()+5;
+    function populateYears(start,end){
+      for(let y=start;y<=end;y++){
+        if(!document.querySelector(`#yearSelect option[value="${y}"]`)){
+          const opt=document.createElement("option");
+          opt.value=y; opt.textContent=y;
+          yearSelect.appendChild(opt);
+        }
+      }
+    }
+    populateYears(minYear,maxYear);
+
+    // Infinite scroll listener
+    yearSelect.addEventListener("scroll",()=>{
+      const scrollBottom = yearSelect.scrollTop + yearSelect.clientHeight;
+      if(scrollBottom >= yearSelect.scrollHeight-5){
+        // add more future years
+        maxYear+=10;
+        populateYears(maxYear-9,maxYear);
+      }
+      if(yearSelect.scrollTop===0){
+        // add more past years
+        minYear-=10;
+        const fragment=document.createDocumentFragment();
+        for(let y=minYear;y<minYear+10;y++){
+          if(!document.querySelector(`#yearSelect option[value="${y}"]`)){
+            const opt=document.createElement("option");
+            opt.value=y; opt.textContent=y;
+            fragment.insertBefore(opt,fragment.firstChild);
+          }
+        }
+        yearSelect.insertBefore(fragment,yearSelect.firstChild);
+      }
+    });
+
+    function generateCalendar(month,year){
+      calendarBody.innerHTML="";
+      monthYear.textContent=`${monthNames[month]} ${year}`;
+      const firstDay=new Date(year,month,1).getDay();
+      const daysInMonth=new Date(year,month+1,0).getDate();
+      let date=1;
+      for(let i=0;i<6;i++){
+        const row=document.createElement("tr");
+        for(let j=0;j<7;j++){
+          const cell=document.createElement("td");
+          if(i===0 && j<firstDay){
+            cell.textContent="";
+          } else if(date>daysInMonth){
+            cell.textContent="";
+          } else {
+                        // create wheel element directly
+            const wheel = document.createElement("div");
+            wheel.className = "day-wheel";
+            cell.innerHTML = `<div>${date}</div>`;
+            cell.appendChild(wheel);
+
+            // highlight today
+            const today = new Date();
+            if (date === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+              cell.style.background = "#ffeaa7";
+              cell.style.fontWeight = "bold";
+            }
+
+            // fetch data for this date
+            const formattedDate = `${year}-${String(month+1).padStart(2,"0")}-${String(date).padStart(2,"0")}`;
+            fetch(`/get_date/${formattedDate}`)
+              .then(res => res.json())
+              .then(items => {
+                if (!items) {
+                  wheel.innerHTML = "";
+                  return;
+                }
+                const times = Object.keys(items);
+                wheel.innerHTML = "";
+                times.forEach(t => {
+                  const timeDiv = document.createElement("div");
+                  timeDiv.textContent = t;
+                  timeDiv.addEventListener("click", () => {
+                    window.location.href = `/get_datetime/${formattedDate}/${t}`;
+                  });
+                  wheel.appendChild(timeDiv);
+                });
+              })
+              .catch(err => {
+                console.error("Error fetching date data:", err);
+              });
+            date++;
+          }
+          row.appendChild(cell);
+        }
+        calendarBody.appendChild(row);
+      }
+    }
+
+    // Initialize
+    const today=new Date();
+    const yearToggle = document.getElementById("yearToggle");
+    yearToggle.textContent = today.getFullYear();
+
+    yearToggle.addEventListener("click", () => {
+      yearSelect.style.display = yearSelect.style.display === "none" ? "block" : "none";
+    });
+
+    monthSelect.value=today.getMonth();
+    yearSelect.value=today.getFullYear();
+    generateCalendar(today.getMonth(),today.getFullYear());
+
+    monthSelect.addEventListener("change",()=>{
+      generateCalendar(parseInt(monthSelect.value),parseInt(yearSelect.value));
+    });
+    yearSelect.addEventListener("change",()=>{
+      generateCalendar(parseInt(monthSelect.value),parseInt(yearSelect.value));
+    });
+    const setpoints = document.getElementById("setpoints")
+    fetch("/get_setpoints").then(res=>res.json()).then(items=>items.forEach((item)=>{
+      const P_element = document.createElement("p")
+      P_element.textContent = item
+      const anchor_element = document.createElement("a")
+      anchor_element.href = "/get_setpoint/"+items
+      anchor_element.appendChild(P_element)
+      setpoints.appendChild(anchor_element)
+    }))
+  </script>
+</body>
+</html>
