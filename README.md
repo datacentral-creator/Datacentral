@@ -27,6 +27,6 @@
 </ol>
 <h1>Using the app</h1>
     
-![Unloaded_home.jpg](./Unloaded_home.jpg)
+<img src="./Unloaded_home.jpg" alt="alt text" width="300" height="200">
 
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
