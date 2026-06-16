@@ -27,6 +27,12 @@
 </ol>
 <h1>Using the app</h1>
     
-<img src="./Unloaded_home.jpg" alt="alt text" width="200" height="400">
+<img src="./Unloaded_home.jpg" alt="Home page(unconfigured)" width="200" height="400">
+<p>This is the home page which you will see when first opening the app</p>
+<p>The first thing you should do is click the settings button which is the bottom at the bottom of the screen that looks like a cog or wheel</p>
+<p>That should take you to this page</p>
+<img src="./Connection_unconfigured_theme.jpg" alt="Connection page(unconfigured)" width="200" height="400">
+<p>Here, if you plan to connect the mobile app to the server component you should enter the ip of the device you are running the server component on on the tailscale network as well as the username and password you have entered into the server component on the file server in the section labelled "Server connection"</p>
+<p>I would also strongly reccomend clicking a theme from "Deep obisidan and magma" or "Bright emerald" by clicking on the theme you wish to pick</p>
 
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
