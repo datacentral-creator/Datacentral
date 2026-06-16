@@ -26,6 +26,7 @@
   <li>Sign in to the same network on your computer</li>
 </ol>
 <h1>Using the app</h1>
+    
 [[Unloaded_home.jpg]]
 
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
