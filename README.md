@@ -49,5 +49,7 @@
 <p>You can click on a local file to interact with it</p>
 <p>The screen below is a demonstration of this with an example file</p>
 <img src="./Editor_datacentral.jpg" alt="Editor page" width="200" height="400">
+<p>The file loads in chunks. Everything you see on this page is one chunk. You can navigate the chunks using the arrows. You can also edit chunks freely however currently saving an edited chunk results in it being saved as it's own file (in the local files).</p>
+<p>You will see on the side a menu saying "thoughtforms". Thoughtforms in the text files are symbols of sorts. They are the words the text is based around. The thoughtforms in the document you are editing are highlighted yellow by default. You can also filter thoughtforms by pressing the settings button in the thoughtform menu to filter the minimum length you will allow a thoughtform to be as shown below. </p>
 
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
