@@ -52,5 +52,9 @@
 <p>The file loads in chunks. Everything you see on this page is one chunk. You can navigate the chunks using the arrows. You can also edit chunks freely however currently saving an edited chunk results in it being saved as it's own file (in the local files).</p>
 <p>You will see on the side a menu saying "thoughtforms". Thoughtforms in the text files are symbols of sorts. They are the words the text is based around. The thoughtforms in the document you are editing are highlighted yellow by default. You can also filter thoughtforms by pressing the settings button in the thoughtform menu to filter the minimum length you will allow a thoughtform to be as shown below. </p>
 <img src="./Thoughtform_menu.jpg" alt="Thoughtform menu" width="200" height="400">
-
+<p>Thoughtforms are also useful because of the button "create links from selected thoughtforms". All thoughtforms are selected by default but you can unselect thoughtforms that aren't useful or deselect all thoughtforms and just select the ones you want then turn these thoughtforms into links. </p>
+<p>If you pull out the slideable menu,returning to the home page you will see a "projects" section</p>
+<img src="./Loaded_home_screen_magma_theme.jpg" alt="Projects menu" width="200" height="400">
+<p>Projects are collections of links. You can click on a project then click on a link inside of it and it will navigate to the file that link is from (opening that file in the editor).</p>
+<p>You can create projects by clicking the "+" button in the top right of the projects menu. You then click on it to add links to it. You can also send projects to the server component or import projects from the server component. This will exchange the metadata of the project, links in the project and the files the links are attatched to.</p>
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
