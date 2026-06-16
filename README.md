@@ -38,5 +38,11 @@
 <img src="./Connection_emerald_theme.jpg" alt="Connection page(emerald)" width="200" height="400">
 <p>Here, if you plan to connect the mobile app to the server component you should enter the ip of the device you are running the server component on on the tailscale network as well as the username and password you have entered into the server component on the file server in the section labelled "Server connection"</p>
 <p>I would also strongly reccomend clicking a theme from "Deep obisidan and magma" or "Bright emerald" by clicking on the theme you wish to pick</p>
-
+<p>Your changes will be initialised when you refresh the page by clicking on the settings button again or when you return to the home page</p>
+<p>You can now return to the home page by clicking on the editor button which is the button that resembles a hand holding a pen at the bottom of the screen</p>
+<p>This is what the home page will now look like:</p>
+<p>Magma</p>
+<img src="./Loaded_home_screen_magma_theme.jpg" alt="Home page(magma)" width="200" height="400">
+<p>Emerald</p>
+<img src="./Loaded_home_screen_emerald_theme.jpg" alt="Connection page(unconfigured)" width="200" height="400">
 <p>Further reading(research/theoretical grounding): https://datacentral-creator.github.io/</p>
