@@ -16,6 +16,7 @@
 <img src="./Tailscale_menu.png" alt="Projects menu" width="200" height="400">
 <p>Next go scroll down to go to the Magic DNS menu as shown below</p>
 <img src="./MagicDNS_menu.png" alt="Projects menu" width="200" height="400">
+<p>Here you should enable magic DNS if it's not enabled already and enable HTTPS</p>
 <ol>
   <li>Clone this repo/download the files</li>
   <li>Run "main.exe" <-- Other files are add ons that can be installed from this file (It acts as a sort of package manager)</li>
