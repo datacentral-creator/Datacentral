@@ -19,6 +19,7 @@
     <li>Run the app</li>
 </ol> 
 <h2><a href="./Connection_user_manual.md">Setting up a connection between the components</a></h2>
+<h3>Quickstart</h3>    
 <ol>
   <li>Install tailscale on your phone</li>
   <li>Sign in to the same network on your computer</li>
