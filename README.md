@@ -13,9 +13,9 @@
 <h3>Contemporary</h3>
 <h4>Tailscale configuration</h4>
 <p>Firstly log into tailscale and go onto the DNS settings as shown below</p>
-<img src="./Tailscale_menu.png" alt="Projects menu" width="200" height="400">
+<img src="./Tailscale_menu.png" alt="Projects menu" width="600" height="1200">
 <p>Next go scroll down to go to the Magic DNS menu as shown below</p>
-<img src="./MagicDNS_menu.png" alt="Projects menu" width="200" height="400">
+<img src="./MagicDNS_menu.png" alt="Projects menu" width="600" height="1200">
 <p>Here you should enable magic DNS if it's not enabled already and enable HTTPS</p>
 <ol>
   <li>Clone this repo/download the files</li>
