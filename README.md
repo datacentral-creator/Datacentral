@@ -6,7 +6,8 @@
     <li>Server component (desktop)</li>
   </ol>
 </p>
-<h2>[Desktop](./Desktop_user_manual.md)</h2>
+
+[Desktop](./Desktop_user_manual.md)
 
 <h2>Mobile</h2>
 <ol>
