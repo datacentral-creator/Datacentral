@@ -42,7 +42,9 @@
 <img src="./Connection_magma_theme.jpg" alt="Connection page(magma)" width="200" height="400">
 <p>With emerald theme</p>
 <img src="./Connection_emerald_theme.jpg" alt="Connection page(emerald)" width="200" height="400">
-<p>Here, if you plan to connect the mobile app to the server component you should enter the ip of the device you are running the server component on on the tailscale network as well as the username and password you have entered into the server component on the file server in the section labelled "Server connection"</p>
+<p>Here, if you plan to connect the mobile app to the server component you should enter the url that will connect you to your server component on your tailscale network. This will be the name of the device running the server component on the tailscale network followed by a "." followed by the DNS name of the tailscale network. You should also put the username and password you entered into the "File_server" component on the server component. </p>
+<p>How to find the name of the device running the server component on the tailscale network</p>
+
 <p>I would also strongly reccomend clicking a theme from "Deep obisidan and magma" or "Bright emerald" by clicking on the theme you wish to pick</p>
 <p>Your changes will be initialised when you refresh the page by clicking on the settings button again or when you return to the home page</p>
 <p>You can now return to the home page by clicking on the editor button which is the button that resembles a hand holding a pen at the bottom of the screen</p>
