@@ -7,3 +7,11 @@
 <p>The DNS name of the tailscale network is the text that appears in the "Tailnet DNS name" box</p>
 <img src="./Tailscale_dns_name.jpg" alt="Tailscale DNS menu" width="600" height="1200">
 <p>After these details have been submitted you will notice features that require the server component can access data</p>
+
+<h1>Desktop</h1>
+<h4>Tailscale configuration</h4>
+<p>Firstly log into tailscale and go onto the DNS settings as shown below</p>
+<img src="./Tailscale_menu.png" alt="Projects menu" width="600" height="1200">
+<p>Next go scroll down to go to the Magic DNS menu as shown below</p>
+<img src="./MagicDNS_menu.png" alt="Projects menu" width="600" height="1200">
+<p>Here you should enable magic DNS if it's not enabled already and enable HTTPS</p>
