@@ -1,4 +1,11 @@
-<h1>Datacentral installation</h1>
+<h1>Datacentral</h1>
+<p>
+  Datacentral is a personal knowledge system that lets you collect, organise, and explore your files in a more meaningful way. It breaks large documents into manageable chunks, highlights the key concepts inside them (“thoughtforms”), and lets you link related ideas together into projects you can navigate like a network. Datacentral is split into two components:
+  <ol>
+    <li>Mobile app</li>
+    <li>Server component (desktop)</li>
+  </ol>
+</p>
 <h2>Desktop</h2>
 <h3>Legacy</h3>
   <ol>
