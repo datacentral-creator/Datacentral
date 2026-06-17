@@ -18,7 +18,7 @@
     <li>Download the app from <a href=https://drive.google.com/drive/folders/1ybxwCeh7UPWqyliDBnq135hPyD_FrkKH?usp=sharing>here</a></li>
     <li>Run the app</li>
 </ol> 
-<h3>If you want to connect it to the server component</h3>
+<h2><a href="./Connection_user_manual.md">Setting up a connection between the components</a></h2>
 <ol>
   <li>Install tailscale on your phone</li>
   <li>Sign in to the same network on your computer</li>
