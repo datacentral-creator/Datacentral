@@ -12,7 +12,8 @@
   <li>Clone this repo/download the files</li>
   <li>Run "main.exe" <-- Other files are add ons that can be installed from this file (It acts as a sort of package manager)</li>
 </ol>
-<h2>Mobile</h2>
+<h2><a href="./Mobile_user_manual.md">Mobile</a></h2>
+<h3>Quickstart</h3>    
 <ol>
     <li>Download the app from <a href=https://drive.google.com/drive/folders/1ybxwCeh7UPWqyliDBnq135hPyD_FrkKH?usp=sharing>here</a></li>
     <li>Run the app</li>
