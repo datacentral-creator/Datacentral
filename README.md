@@ -11,6 +11,11 @@
     <li>Create an account at localhost:3000 and create a pod called "poddy" to use the solid based add ons</li>
   </ol> 
 <h3>Contemporary</h3>
+<h4>Tailscale configuration</h4>
+<p>Firstly log into tailscale and go onto the DNS settings as shown below</p>
+<img src="./Tailscale_menu.png" alt="Projects menu" width="200" height="400">
+<p>Next go scroll down to go to the Magic DNS menu as shown below</p>
+<img src="./MagicDNS_menu.png" alt="Projects menu" width="200" height="400">
 <ol>
   <li>Clone this repo/download the files</li>
   <li>Run "main.exe" <-- Other files are add ons that can be installed from this file (It acts as a sort of package manager)</li>
