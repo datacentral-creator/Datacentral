@@ -1,4 +1,9 @@
-<h3>Legacy</h3>
+<p>To start using the server component simply: </p>
+<ol>
+  <li>Clone this repo/download the files</li>
+  <li>Run "main.exe" <-- Other files are add ons that can be installed from this file (It acts as a sort of package manager)</li>
+</ol>
+<p>However many of the add ons are legacy add ons so in order to use them extra steps are required as shown below: </p>
   <ol>
     <li>Clone this repo/download the files </li>
     <li>Download the add ons from <a href="https://drive.google.com/drive/folders/1cJYGMm6Aftqti8qN181DWwTC-rRK3Q2z?usp=drive_link">here</a> into the same directory as these files (legacy)</li>
