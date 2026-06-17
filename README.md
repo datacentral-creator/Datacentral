@@ -6,9 +6,7 @@
     <li>Server component (desktop)</li>
   </ol>
 </p>
-<h2>
-[Desktop](./Desktop_user_manual.md)
-</h2>
+<h2><a href="./Desktop_user_manual.md">Desktop</a></h2>
 <h2>Mobile</h2>
 <ol>
     <li>Download the app from <a href=https://drive.google.com/drive/folders/1ybxwCeh7UPWqyliDBnq135hPyD_FrkKH?usp=sharing>here</a></li>
