@@ -15,3 +15,4 @@
 <p>Next go scroll down to go to the Magic DNS menu as shown below</p>
 <img src="./MagicDNS_menu.png" alt="Projects menu" width="600" height="1200">
 <p>Here you should enable magic DNS if it's not enabled already and enable HTTPS</p>
+<p>To connect the server component to the mobile app you will next need to configure the file server addon as demonstrated in the <a href="./Desktop_user_manual">Desktop user manual </a></p>
