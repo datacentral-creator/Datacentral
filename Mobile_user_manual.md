@@ -1,3 +1,4 @@
+<h1><a href="./README.md">Back to main</a></h1>
 <h1>Using the app</h1>
 <img src="./Unloaded_home.jpg" alt="Home page(unconfigured)" width="200" height="400">
 <p>This is the home page which you will see when first opening the app</p>
