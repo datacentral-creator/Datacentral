@@ -1,3 +1,4 @@
+<h1><a href="./README.md">Back to main</a></h1>
 <h1>Mobile</h1>
 <p>You can connect the mobile app to the server component from the connection screen as shown below</p>
 <img src="./Connection_magma_theme.jpg" alt="Connection page(magma)" width="200" height="400">
