@@ -1,3 +1,4 @@
+<h1><a href="./README.md">Back to main</a></h1>
 <h1>Start</h1>
 <p>To start using the server component simply: </p>
 <ol>
