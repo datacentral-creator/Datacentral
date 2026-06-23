@@ -285,7 +285,7 @@ src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0">
                 console.log(Object)
                 const Reader = new FileReader()
                 Reader.onload = () => {
-                  fetch("http://localhost:8000/Write_file",{method:"POST",headers: { "Content-Type": "application/json; charset=UTF-8" },
+                  fetch("http://localhost:8001/Write_file",{method:"POST",headers: { "Content-Type": "application/json; charset=UTF-8" },
 body: JSON.stringify({
 file:Object.name,
 content: Reader.result,
@@ -305,7 +305,7 @@ content: Reader.result,
           const Data_analysis_element = document.getElementsByClassName("Data_analysis")[0]
           Data_analysis_element.style.display = "flex"
           const Files_menu = document.getElementById("Files")
-          fetch("http://localhost:8000/Files").then((files)=>{
+          fetch("http://localhost:8001/Files").then((files)=>{
             files.json().then((data)=>{
               for (const el in data){
                 if (!(el in El_used)){
@@ -410,6 +410,40 @@ content: Reader.result,
                     const Statistics_el_five = document.createElement("h3")
                     Statistics_el_five.innerText = "Spearmans rank correlation coefficent p value: "+P
                     Statistics.appendChild(Statistics_el_five)
+                    const Statistics_el_six = document.createElement("h3")
+                    Statistics_el_six.innerText = "Qualiative analysis: There is "
+                    if (p <= 0.05){
+                      Statistics_el_six.innerText += "sufficent evidence to suggest"
+                      if (PMCC > 0){
+                        Statistics_el_six.innerText += "positive correlation."
+                      }else{
+                        if (PMCC < 0){
+                          Statistics_el_six.innerText += "negative correlation."
+                        }else{
+                          Statistics_el_six.innerText += "no correlation "
+                        }
+                      }
+                    }else{
+                      Statistics_el_six.innerText += "insufficent evidence to suggest correlation"
+                    }
+                    if ((PMCC === 0)||(p<0.05)){
+                      Statistics_el_six.innerText += "and there is "
+                      if (P <= 0.05){
+                        Statistics_el_six.innerText += "sufficent evidence to suggest "
+                        if (Spearmans < 0){
+                          Statistics_el_six.innerText += " negative association"
+                        }else{
+                          if (Spearmans > 0){
+                            Statistics_el_six.innerText += " positive association"
+                          }else{
+                            Statistics_el_six.innerText += "no association."
+                          }
+                        }
+                      }else{
+                        Statistics_el_six.innerText += "insufficent evidence to suggest association"
+                      }
+                    }
+                    Statistics.appendChild(Statistics_el_six)
                   }
                 })
               }
@@ -664,7 +698,7 @@ content: Reader.result,
       generateCalendar(parseInt(monthSelect.value),parseInt(yearSelect.value));
     });
     const setpoints = document.getElementById("setpoints")
-    fetch("/get_setpoints").then(res=>res.json()).then(items=>items.forEach((item)=>{
+    fetch("/http:/localhost:8001/get_setpoints").then(res=>res.json()).then(items=>items.forEach((item)=>{
       const P_element = document.createElement("p")
       P_element.textContent = item
       const anchor_element = document.createElement("a")
