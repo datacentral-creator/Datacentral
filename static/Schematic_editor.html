@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Schematic pipeline</title>
+  <style>
+    ::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+
+    * {
+      scrollbar-width: none; /* Firefox */
+    }
+    #Schematic_viewer{
+      overflow-y: auto;
+      height:300px;
+    }
+    #Schematic_creator{
+      width: 100%;
+    }
+    #Results{
+      background-color: #2980b9;
+      border-radius: 10px;
+      width:60%
+    }
+    #header{
+      background-color: #3498db;
+      border-radius: 10px;
+      z-index: 1;
+    }
+    #Schematic_menu{
+      overflow-y: auto;
+      height:300px;
+    }
+  </style>
+</head>
+<body>
+<div style="display: flex;">
+<div id="Schematic_creator">
+<h1>Schematic menu</h1>
+  <div id="Schematic_menu">
+
+  </div>
+</div>
+<div id="Results">
+  <div id="header">
+      <h1>Results</h1>
+  </div>
+  <div id="Schematic_viewer">
+  </div>
+</div>
+</div>
+<script>
+    const Schematic_viewer = document.getElementById("Schematic_viewer")
+    const Schematic_menu = document.getElementById("Schematic_menu")
+    fetch("http://localhost:8001/Data/Schematic.json").then((Response)=>Response.json().then((data)=>{
+        const Original_schematic_text = data.reduce((accumulator,value)=>accumulator+=value)
+        let Label_order = Original_schematic_text.split(":").map((el,index)=>{
+                      const Index_string = ""+index
+                      const Last_character = Index_string[Index_string.length-1]
+                      if (["2,4,6,8,0"].includes(Last_character)){
+                        return el
+                      }else{
+                        return el.split(",")[1]
+                      }
+                    })
+      Label_order.pop()
+      Label_order = Label_order.reverse()
+      Label_order.pop()
+      Label_order = Label_order.reverse()
+        const Schematic = JSON.parse(Original_schematic_text)
+        Label_order.forEach((el,index)=>{
+          const Label = el.replaceAll(" ","").replaceAll('"',"")
+          const Label_element = document.createElement("h3")
+          Label_element.innerText = Label
+          const Label_two = Schematic[Label]
+          const Label_element_two = document.createElement("select")
+          const Option = document.createElement("option")
+          Option.innerText = Label_two
+          Option.value = Label_two
+          Label_element_two.appendChild(Option)
+          const Labels = ["select","search","select,search","delete"].filter((el)=>el!==Label_two.toString())
+          Labels.forEach((el)=>{
+            const Option = document.createElement("option")
+            Option.innerText = el
+            Option.value = el
+            Label_element_two.appendChild(Option)
+          })
+          Label_element_two.addEventListener("change",(event)=>{
+            switch (Label_element_two.value){
+              case "delete":
+                delete Schematic[Label]
+                break
+              default:
+                Schematic[Label] = Label_element_two.value.split(",")
+                break
+            }
+            const Body = JSON.stringify(Schematic)
+            fetch("http://localhost:8001/Write_file",{method:"POST",headers: { "Content-Type": "application/json; charset=UTF-8" },
+            body: JSON.stringify({
+            file:"Schematic.json",
+            content: Body,
+            })})
+          })
+          const Subdiv = document.createElement("div")
+          Subdiv.appendChild(Label_element)
+          Subdiv.appendChild(Label_element_two)
+          Schematic_menu.appendChild(Subdiv)
+        })
+        fetch("http://localhost:8001/Data/Schematics_data.json").then((Response)=>Response.json().then((data)=>{
+            const Data = JSON.parse(data.reduce((accumulator,value)=>accumulator+=value))["Results"]
+            fetch("http://localhost:8001/Data/Data.json").then((Response)=>Response.json().then((data)=>{
+                const Database = JSON.parse(data.reduce((accumulator,value)=>accumulator+=value))
+                const Processed_data = Object.fromEntries(Data.map((el)=>{
+                    let Keys = Object.keys(el[0])
+                    Keys = Keys.filter((key)=>(!(["name","usda_id"].includes(key))))
+                    function Process_element(element,el,key){
+                      if (element === "select"){
+                            if (Schematic["_"] === "Additive"){
+                                if (typeof el[0][key] === "object"){
+                                  return Object.keys(el[0][key]).map((key_two)=>el[0][key][key_two]*el[1])
+                                }
+                                return el[0][key] * el[1]
+                            }
+                            return el[0][key]
+                        }
+                        if (element === "search"){
+                            return Object.keys(el[0][key]).map((key)=>Database.filter((el_two)=>el_two.name===key))
+                        }
+                    }
+                    return Keys.map((key)=>Schematic[key].map((el_two)=>{
+                        return Process_element(el_two,el,key)
+                    }))
+                }).map((el)=>{
+                  return el.map((el_two)=>{
+                    if (el_two.length === 1){
+                      return el_two[0]
+                    }else{
+                      return Object.keys(el_two[0]).map((el_three,index)=>[el_two[1][index][0]["name"],el_three])
+                    }
+                  })
+                }).reduce((acccumulator,el)=>{
+                  return el.map((el_two,index)=>{
+                    if (typeof el_two === "number"){
+                      return acccumulator[index] + el_two
+                    }else{
+                      if (acccumulator[index] === undefined){
+                        return el_two
+                      }else{
+                        const Dictionary = acccumulator[index]
+                        el_two.forEach(([key,value])=>{
+                          const Match = Dictionary.filter(([name,_])=>name===key)
+                          if (Match.length >= 1){
+                            Dictionary[Dictionary.indexOf(Match[0])][1] = (+Dictionary[Dictionary.indexOf(Match[0])][1])+(+value)
+                          }else{
+                            Dictionary.push([key,value])
+                          }
+                        })
+                        return Dictionary
+                      }
+                    }
+                  })
+                }).map((el,index)=>{
+                  const Label = Label_order[index].replaceAll('"','').replaceAll(" ","")
+                  if (typeof el === "number"){
+                    return [Label,el]
+                  }else{
+                    return [Label,Object.fromEntries(el)]
+                  }
+                }))
+              Object.keys(Processed_data).forEach((Key,index)=>{
+                const Key_label = document.createElement("h2")
+                const Subdiv = document.createElement("div")
+                Subdiv.style = "display:flex;flex-direction:column;"
+                Subdiv.appendChild(Key_label)
+                Key_label.innerText = Key
+                if (typeof Processed_data[Key] === "number"){
+                  const Value = document.createElement("p")
+                  Value.innerText = Processed_data[Key]
+                  Subdiv.appendChild(Value)
+                  Schematic_viewer.appendChild(Subdiv)
+                }else{
+                  Schematic_viewer.appendChild(Subdiv)
+                  Object.keys(Processed_data[Key]).forEach((Key_two)=>{
+                    const Key_label = document.createElement("h3")
+                    Key_label.innerText = "\t"+Key_two
+                    const Value = document.createElement("p")
+                    Value.innerText = "\t"+Processed_data[Key][Key_two]
+                    const Subdiv = document.createElement("div")
+                    Subdiv.style = "display:flex;flex-direction:column;"
+                    Subdiv.appendChild(Key_label)
+                    Subdiv.appendChild(Value)
+                    Schematic_viewer.appendChild(Subdiv)
+                  })
+                }
+              })
+            }))
+        }))
+    }))
+</script>
+</body>
+</html>

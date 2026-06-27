@@ -200,6 +200,7 @@
     <select name="Schematic_chooser" id="Schematic_chooser">
     <option value="default">Default schematic (task chooser)</option>
     <option value="custom">Custom schematic</option>
+    <option value="new">Select/edit schematic</option>
     </select>
     <form action="/submit" method="POST" id="Form_schematic">
     </form>
@@ -453,6 +454,10 @@ content: Reader.result,
             }
           })
 
+          break
+        case "new":
+          document.location.href = "http://localhost:8001/Schematic_editor"
+          
           break
         default:
           const Data_analysis = document.getElementsByClassName("Data_analysis")[0]
