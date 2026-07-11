@@ -47,7 +47,7 @@ You can click this button to store the results for further proccessing
 <br>
 <br> 
 <img src="./Results_proccessed.png" alt="Results button" width="500" height="400">
-This is an example of the results after further proccessing. You can also define schematics on this page (which creates the Schematic.json file for you determining how the results are proccessed).
+This is an example of the results after further proccessing. You can also define schematics on this page (which creates the Schematic.json file for you determining how the results are proccessed). You can also save the processed result as an "event" which saves the data along with a date and time. 
 <br>
 <br> 
 <img src="./Database_upload_menu.png" alt="Results button" width="500" height="400">
