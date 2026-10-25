@@ -37,4 +37,4 @@
 <img src="./Screenshot_9_mobile.jpg" alt="Projects menu" width="200" height="400">
 <p>On the files menu if the file is an image and you click on it it opens the image</p>
 <p>You can create projects and add subprojects and references using the "+" button </p>
-<p>The grid on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
+<p>The grid button on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
