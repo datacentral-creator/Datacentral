@@ -30,11 +30,11 @@
 <p>Projects are collections of links, files and other projects.</p>
 <p>This is what it looks like once you've clicked on a project</p>
 <p>References menu</p>
-<img src="./Screenshot_9_mobile.jpg" alt="Projects menu" width="200" height="400">
-<p>Projects menu(for nested projects)</p>
-<img src="./Screenshot_9_mobile.jpg" alt="Projects menu" width="200" height="400">
-<p>Files menu</p>
 <img src="./Screenshot_10_mobile.jpg" alt="Projects menu" width="200" height="400">
+<p>Projects menu(for nested projects)</p>
+<img src="./Screenshot_10_mobile.jpg" alt="Projects menu" width="200" height="400">
+<p>Files menu</p>
+<img src="./Screenshot_9_mobile.jpg" alt="Projects menu" width="200" height="400">
 <p>On the files menu if the file is an image and you click on it it opens the image</p>
 <p>You can create projects and add subprojects and references using the "+" button </p>
 <p>The grid on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
