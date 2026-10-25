@@ -50,7 +50,7 @@ You can click this button to store the results for further proccessing
 This is an example of the results after further proccessing. You can also define schematics on this page (which creates the Schematic.json file for you determining how the results are proccessed). You can also save the processed result as an "event" which saves the data along with a date and time. 
 <br>
 <br> 
-<img src="./Database_upload_menu.png" alt="Results button" width="500" height="400">
+<img src="./Desktop_screenshot_one.png" alt="Results button" width="500" height="400">
 This is the menu for uploading and downloading databases via a JSON file (Data.json) as well as creating conversions which allow the program to convert references into database entries for analysis.
 <br>
 <p>The system of converting links into data is called the schematic pipeline. To find out more about the schematic pipeline you can read <a href="https://datacentral-creator.github.io/Datacentral_implementations/Schematic_pipeline.html">here</a></p>
