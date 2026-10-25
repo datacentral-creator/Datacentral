@@ -59,7 +59,7 @@ This is an example of the results after further proccessing. You can also define
 <br> 
 <img src="./Desktop_screenshot_one.png" alt="Results button" width="500" height="400">
 This is the menu for uploading and downloading databases via a JSON file (Data.json) as well as creating conversions and databases which allow the program to convert references into database entries for analysis.
-<img src="./Desktop_screenshot_two_two.png" alt="Results button" width="500" height="400">
+<img src="./Desktop_screenshot_two.png" alt="Results button" width="500" height="400">
 <p>This is the menu for creating a database. It iterates over the parameters inserting the parameter into each reference of the project selected where X is the parameter and Y is the reference IE if you inputted "how much X is in Y" and you had a project with one reference (chicken) for the parameters shown you wou get the questions "how much fat is in chicken?", "how much calories is in chicken?", how much proteins is in chicken?", "how much carbohydrates is in chicken?" and "how much nutrients is in chicken?". If you want the answer to your question in a specific unit you can put that and it will append "Please give your answer in (units)" to each question. The schematic pipeline then sends these questions to wolfram alpha short answers API (you input your API key in another menu) and generates a database file from the answers it recieves</p>
 <img src="./Desktop_screenshot_three.png" alt="Results button" width="500" height="400">
 <p>This is what the menu looks like when you first use the application and you haven't entered a wolfram alpha short answers API key yet</p>
