@@ -25,7 +25,7 @@
 <p>You will see on the side a menu saying "thoughtforms". Thoughtforms in the text files are symbols of sorts <a href="https://github.com/datacentral-creator/datacentral-creator.github.io/blob/main/Datacentral_implementations/tagger.md">(You can read more about this here)</a>. They are the words the text is based around. The thoughtforms in the document you are editing are highlighted yellow by default. You can also filter thoughtforms by pressing the settings button in the thoughtform menu to filter the minimum length you will allow a thoughtform to be as shown below. </p>
 <img src="./Screenshot_7_mobile.jpg" alt="Thoughtform menu" width="200" height="600">
 <p>Thoughtforms are also useful because of the button "create links from selected thoughtforms". All thoughtforms are selected by default but you can unselect thoughtforms that aren't useful or deselect all thoughtforms and just select the ones you want then turn these thoughtforms into links (you can also select text manually and turn it into a link). </p>
-<p>If you pull out the slideable menu,returning to the home page you will see a "projects" section</p>
-<img src="./Loaded_home_screen_magma_theme.jpg" alt="Projects menu" width="200" height="400">
-<p>Projects are collections of links. You can click on a project then click on a link inside of it and it will navigate to the file that link is from (opening that file in the editor).</p>
+<p>If you click the grid icon on the bottom left it will take you to a projects menu</p>
+<img src="./Screenshot_8_mobile.jpg" alt="Projects menu" width="200" height="400">
+<p>Projects are collections of links, files and other projects. You can click on a project then click on a link inside of it and it will navigate to the file that link is from (opening that file in the editor).</p>
 <p>You can create projects by clicking the "+" button in the top right of the projects menu. You then click on it to add links to it. You can also send projects to the server component or import projects from the server component. This will exchange the metadata of the project, links in the project and the files the links are attatched to.</p>
