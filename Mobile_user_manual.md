@@ -1,6 +1,6 @@
 <h1><a href="./README.md">Back to main</a></h1>
 <h1>Using the app</h1>
-<img src="./Unloaded_home.jpg" alt="Home page(unconfigured)" width="200" height="400">
+<img src="./Screenshot_1_mobile.jpg" alt="Home page(unconfigured)" width="200" height="400">
 <p>This is the home page which you will see when first opening the app</p>
 <p>The first thing you should do is click the settings button which is the button at the bottom of the screen that looks like a cog or wheel</p>
 <p>That should take you to this page</p>
