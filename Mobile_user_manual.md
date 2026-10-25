@@ -38,3 +38,5 @@
 <p>On the files menu if the file is an image and you click on it it opens the image</p>
 <p>You can create projects and add subprojects and references using the "+" button </p>
 <p>The grid button on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
+<p>If you enable the functionality to connect to the server component in the settings you also have the functionality to send projects to and import projects from the server component as shown below</p>
+<img src="./Screenshot_11_mobile.jpg" alt="Projects menu" width="200" height="400">
