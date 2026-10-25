@@ -4,17 +4,17 @@
 <p>This is the home page which you will see when first opening the app</p>
 <p>The first thing you should do is click the settings button which is the button at the bottom of the screen that looks like a cog or wheel</p>
 <p>That should take you to this page</p>
-<img src="./Connection_unconfigured_theme.jpg" alt="Connection page(unconfigured)" width="200" height="400">
+<img src="./Screenshot_2_mobile.jpg" alt="Connection page(unconfigured)" width="200" height="400">
 <p>With magma theme</p>
-<img src="./Connection_magma_theme.jpg" alt="Connection page(magma)" width="200" height="400">
+<img src="./Screenshot_3_mobile.jpg" alt="Connection page(magma)" width="200" height="400">
 <p>With emerald theme</p>
-<img src="./Connection_emerald_theme.jpg" alt="Connection page(emerald)" width="200" height="400">
+<img src="./Screenshot_4_mobile.jpg" alt="Connection page(emerald)" width="200" height="400">
 <p>I would strongly reccomend clicking a theme from "Deep obisidan and magma" or "Bright emerald" by clicking on the theme you wish to pick</p>
 <p>Your changes will be initialised when you refresh the page by clicking on the settings button again or when you return to the home page</p>
 <p>You can now return to the home page by clicking on the editor button which is the button that resembles a hand holding a pen at the bottom of the screen</p>
 <p>This is what the home page will now look like:</p>
 <p>Magma</p>
-<img src="./Loaded_home_screen_magma_theme.jpg" alt="Home page(magma)" width="200" height="400">
+<img src="./Screenshot_5_mobile.jpg" alt="Home page(magma)" width="200" height="400">
 <p>Emerald</p>
 <img src="./Loaded_home_screen_emerald_theme.jpg" alt="Connection page(unconfigured)" width="200" height="400">
 <p>You can upload files either by clicking the "upload" button and uploading files from your phone, or waiting and the "Server directory" files menu will become populated with the files from the file server on the server component, clicking on one of these files will download it into your local files on the app (as well as uploading a file from your phone) </p>
