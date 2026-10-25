@@ -27,5 +27,14 @@
 <p>Thoughtforms are also useful because of the button "create links from selected thoughtforms". All thoughtforms are selected by default but you can unselect thoughtforms that aren't useful or deselect all thoughtforms and just select the ones you want then turn these thoughtforms into links (you can also select text manually and turn it into a link). </p>
 <p>If you click the grid icon on the bottom left it will take you to a projects menu</p>
 <img src="./Screenshot_8_mobile.jpg" alt="Projects menu" width="200" height="400">
-<p>Projects are collections of links, files and other projects. You can click on a project then click on a link inside of it and it will navigate to the file that link is from (opening that file in the editor).</p>
-<p>You can create projects by clicking the "+" button in the top right of the projects menu. You then click on it to add links to it. You can also send projects to the server component or import projects from the server component. This will exchange the metadata of the project, links in the project and the files the links are attatched to.</p>
+<p>Projects are collections of links, files and other projects.</p>
+<p>This is what it looks like once you've clicked on a project</p>
+<p>References menu</p>
+<img src="./Screenshot_9_mobile.jpg" alt="Projects menu" width="200" height="400">
+<p>Projects menu(for nested projects)</p>
+<img src="./Screenshot_9_mobile.jpg" alt="Projects menu" width="200" height="400">
+<p>Files menu</p>
+<img src="./Screenshot_10_mobile.jpg" alt="Projects menu" width="200" height="400">
+<p>On the files menu if the file is an image and you click on it it opens the image</p>
+<p>You can create projects and add subprojects and references using the "+" button </p>
+<p>The grid on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
