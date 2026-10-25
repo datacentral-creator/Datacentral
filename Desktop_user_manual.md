@@ -56,8 +56,6 @@ This is an example of the results after further proccessing. You can also define
 <p>You can also view the data as a set of statistics</p>
 <img src="./Statistics_two.png" alt="Results button" width="500" height="400">
 <p>When in joint data mode you can also view the correlation data between the data columns</p>
-<br>
-<img src="./Data_visualisation.png" alt="Results button" width="500" height="400">
 <br> 
 <img src="./Desktop_screenshot_one.png" alt="Results button" width="500" height="400">
 This is the menu for uploading and downloading databases via a JSON file (Data.json) as well as creating conversions and databases which allow the program to convert references into database entries for analysis.
