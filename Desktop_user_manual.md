@@ -1,4 +1,4 @@
-<h1><a href="./README.md">Back to main</a></h1>
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b94af3b9-6bec-4149-a3bf-876de7b68681" /><h1><a href="./README.md">Back to main</a></h1>
 <h1>Start</h1>
 <p>To start using the server component simply: </p>
 <ol>
@@ -49,6 +49,15 @@ You can click this button to store the results for further proccessing
 <img src="./Results_proccessed.png" alt="Results button" width="500" height="400">
 This is an example of the results after further proccessing. You can also define schematics on this page (which creates the Schematic.json file for you determining how the results are proccessed). You can also save the processed result as an "event" which saves the data along with a date and time. 
 <br>
+<p>Clicking on "Back to main(schematic pipeline)" takes you to an updated version of my <a href="https://github.com/datacentral-creator/Scheduling-project">scheduling project</a> which includes an additional feature of data visualisation integrating the results from data processing in the screenshot shown above as a data source</p>
+<img src="./Data_visualisation.png" alt="Results button" width="500" height="400">
+<p>You can view each data column individually or use "joint" to see a graph of one column compared to the other</p>
+<img src="./Data_statistics.png" alt="Results button" width="500" height="400">
+<p>You can also view the data as a set of statistics</p>
+<img src="./Data_statistics_two.png" alt="Results button" width="500" height="400">
+<p>When in joint data mode you can also view the correlation data between the data columns</p>
+<br>
+<img src="./Data_visualisation.png" alt="Results button" width="500" height="400">
 <br> 
 <img src="./Desktop_screenshot_one.png" alt="Results button" width="500" height="400">
 This is the menu for uploading and downloading databases via a JSON file (Data.json) as well as creating conversions and databases which allow the program to convert references into database entries for analysis.
