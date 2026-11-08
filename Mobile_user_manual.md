@@ -1,5 +1,6 @@
 <h1><a href="./README.md">Back to main</a></h1>
 <h1>Using the app</h1>
+<h2>First launce/setup</h2>
 <img src="./Screenshot_1_mobile.jpg" alt="Home page(unconfigured)" width="200" height="400">
 <p>This is the home page which you will see when first opening the app</p>
 <p>The first thing you should do is click the settings button which is the button at the bottom of the screen that looks like a cog or wheel</p>
@@ -17,6 +18,7 @@
 <img src="./Screenshot_5_mobile.jpg" alt="Home page(magma)" width="200" height="400">
 <p>Emerald</p>
 <img src="./Screenshot_6_mobile.jpg" alt="Connection page(unconfigured)" width="200" height="400">
+<h2>Using the editor</h2>
 <p>You can upload files either by clicking the "upload" button and uploading files from your phone, or waiting and the "Server directory" files menu will become populated with the files from the file server on the server component, clicking on one of these files will download it into your local files on the app (as well as uploading a file from your phone) </p>
 <p>You can click on a local file to interact with it</p>
 <p>The screen below is a demonstration of this with an example file</p>
