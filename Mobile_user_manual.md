@@ -40,3 +40,6 @@
 <p>The grid button on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
 <p>If you enable the functionality to connect to the server component in the settings you also have the functionality to send projects to and import projects from the server component as shown below</p>
 <img src="./Screenshot_11_mobile.jpg" alt="Projects menu" width="200" height="400">
+<br>
+<p>There is also a link menu where if you click on a link on a project or if you select a word in a file which is a link it will come up with a menu listing files that link is in as seen below. This can be used to easily create wikis.</p>
+<img src="./Wiki_menu.jpg" alt="Wiki menu" width="200" height="400">
