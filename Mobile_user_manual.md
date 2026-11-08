@@ -1,6 +1,6 @@
 <h1><a href="./README.md">Back to main</a></h1>
 <h1>Using the app</h1>
-<h2>First launce/setup</h2>
+<h2>First launch/setup</h2>
 <img src="./Screenshot_1_mobile.jpg" alt="Home page(unconfigured)" width="200" height="400">
 <p>This is the home page which you will see when first opening the app</p>
 <p>The first thing you should do is click the settings button which is the button at the bottom of the screen that looks like a cog or wheel</p>
@@ -18,15 +18,20 @@
 <img src="./Screenshot_5_mobile.jpg" alt="Home page(magma)" width="200" height="400">
 <p>Emerald</p>
 <img src="./Screenshot_6_mobile.jpg" alt="Connection page(unconfigured)" width="200" height="400">
-<h2>Using the editor</h2>
+
+<h2>Editing text in the editor</h2>
 <p>You can upload files either by clicking the "upload" button and uploading files from your phone, or waiting and the "Server directory" files menu will become populated with the files from the file server on the server component, clicking on one of these files will download it into your local files on the app (as well as uploading a file from your phone) </p>
 <p>You can click on a local file to interact with it</p>
 <p>The screen below is a demonstration of this with an example file</p>
 <img src="./Editor_datacentral.jpg" alt="Editor page" width="200" height="600">
-<p>The file loads in chunks. Everything you see on this page is one chunk. You can navigate the chunks using the arrows. You can also edit chunks freely however currently saving an edited chunk results in it being saved as it's own file (in the local files).</p>
-<p>You will see on the side a menu saying "thoughtforms". Thoughtforms in the text files are symbols of sorts <a href="https://github.com/datacentral-creator/datacentral-creator.github.io/blob/main/Datacentral_implementations/tagger.md">(You can read more about this here)</a>. They are the words the text is based around. The thoughtforms in the document you are editing are highlighted yellow by default. You can also filter thoughtforms by pressing the settings button in the thoughtform menu to filter the minimum length you will allow a thoughtform to be as shown below. </p>
+<p>The file loads in blocks. You can navigate the blocks using the arrows. You can also edit blocks freely and save the new file to local files.</p>
+
+<h2>Thoughtform menu</h2>
+<p>You will see on the side a menu saying "thoughtforms". Thoughtforms in the text files are recurring symbols <a href="https://github.com/datacentral-creator/datacentral-creator.github.io/blob/main/Datacentral_implementations/tagger.md">(You can read more about this here)</a>. They are the words the text is based around. The thoughtforms in the document you are editing are highlighted yellow by default. You can also filter thoughtforms by pressing the settings button in the thoughtform menu to filter the minimum length you will allow a thoughtform to be as shown below. </p>
 <img src="./Screenshot_7_mobile.jpg" alt="Thoughtform menu" width="200" height="600">
 <p>Thoughtforms are also useful because of the button "create links from selected thoughtforms". All thoughtforms are selected by default but you can unselect thoughtforms that aren't useful or deselect all thoughtforms and just select the ones you want then turn these thoughtforms into links (you can also select text manually and turn it into a link). </p>
+
+<h2>Projects and links</h2>
 <p>If you click the grid icon on the bottom left it will take you to a projects menu</p>
 <img src="./Screenshot_8_mobile.jpg" alt="Projects menu" width="200" height="400">
 <p>Projects are collections of links, files and other projects.</p>
@@ -43,5 +48,7 @@
 <p>If you enable the functionality to connect to the server component in the settings you also have the functionality to send projects to and import projects from the server component as shown below</p>
 <img src="./Screenshot_11_mobile.jpg" alt="Projects menu" width="200" height="400">
 <br>
-<p>There is also a link menu where if you click on a link on a project or if you select a word in a file which is a link it will come up with a menu listing files that link is in as seen below. Clicking on a file opens it in the editor. This can be used to easily create wikis.</p>
+
+<h2>Creating a wiki using links</h2>
+<p>There is a link menu where if you click on a link on a project or if you select a word in a file which is a link it will come up with a menu listing files that link is in as seen below. Clicking on a file opens it in the editor. This can be used to easily create wikis as links become nodes that connect files - creating a link in a file adds it to the link menu.</p>
 <img src="./Wiki_menu.jpg" alt="Wiki menu" width="200" height="400">
