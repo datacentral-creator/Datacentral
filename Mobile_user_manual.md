@@ -56,9 +56,10 @@
 <p>The grid button on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
 <p>If you enable the functionality to connect to the server component in the settings you also have the functionality to send projects to and import projects from the server component as shown below</p>
 <img src="./Screenshot_11_mobile.jpg" alt="Projects menu" width="200" height="400">
-<p>In the future I plan to also have a section for data connected to the link in the <a href="./Desktop_user_manual.md">desktop component</a></p>
+
 <br>
 
 <h2>Creating a wiki using links</h2>
 <p>There is a link menu where if you click on a link on a project or if you select a word in a file which is a link it will come up with a menu listing files that link is in as seen below. Clicking on a file opens it in the editor. This can be used to easily create wikis as links become nodes that connect files - creating a link in a file adds it to the link menu.</p>
 <img src="./Wiki_menu.jpg" alt="Wiki menu" width="200" height="400">
+<p>In the future I plan to also have a section for data connected to the link in the <a href="./Desktop_user_manual.md">desktop component</a></p>
