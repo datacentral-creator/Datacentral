@@ -1,5 +1,14 @@
 <h1><a href="./README.md">Back to main</a></h1>
 <h1>Using the app</h1>
+
+<h2>Contents</h2>
+<ol>
+  <li>First launch</li>
+  <li>Editing text in the editor</li>
+  <li>Thoughtform menu</li>
+  <li>Projects and links</li>
+</ol>
+
 <h2>First launch/setup</h2>
 <img src="./Screenshot_1_mobile.jpg" alt="Home page(unconfigured)" width="200" height="400">
 <p>This is the home page which you will see when first opening the app</p>
