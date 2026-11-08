@@ -56,6 +56,7 @@
 <p>The grid button on the top left is to navigate between viewing the results as a list or a grid and the white search bar at the top allows you to search the results</p>
 <p>If you enable the functionality to connect to the server component in the settings you also have the functionality to send projects to and import projects from the server component as shown below</p>
 <img src="./Screenshot_11_mobile.jpg" alt="Projects menu" width="200" height="400">
+<p>In the future I plan to also have a section for data connected to the link in the <a href="./Desktop_user_manual.md">desktop component</a></p>
 <br>
 
 <h2>Creating a wiki using links</h2>
